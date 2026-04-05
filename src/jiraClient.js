@@ -168,11 +168,13 @@ function filterIssuesByAssignees(issues, assignees) {
   const mappedAssignees = assignees.map((a) => assigneeMap[String(a).toLowerCase()] || a);
 
   const exact = new Set();
+  const loose = new Set();
   const localParts = new Set();
   mappedAssignees.forEach((value) => {
     const key = normalizeAssigneeKey(value);
     if (!key) return;
     exact.add(key);
+    loose.add(normalizeLooseKey(key));
     const local = assigneeLocalPart(key);
     if (local) localParts.add(local);
   });
@@ -189,6 +191,7 @@ function filterIssuesByAssignees(issues, assignees) {
       const assigneeKey = normalizeAssigneeKey(raw);
       if (!assigneeKey) return false;
       if (exact.has(assigneeKey)) return true;
+      if (loose.has(normalizeLooseKey(assigneeKey))) return true;
       const local = assigneeLocalPart(assigneeKey);
       return local ? localParts.has(local) : false;
     });
@@ -276,6 +279,7 @@ async function fetchJiraIssues(options = {}) {
   let usedTeamFallback = false;
   let lastError = null;
   const maxResults = Number(options.maxResults || config.maxResults);
+  const pageSize = Math.max(50, Math.min(200, Number(config.teamMaxResults || 100)));
 
   async function tryQuery(jqlCandidate) {
     try {
@@ -286,6 +290,44 @@ async function fetchJiraIssues(options = {}) {
       lastError = error;
       return null;
     }
+  }
+
+  async function collectIssuesForJql(jqlCandidate) {
+    const first = await tryQuery(jqlCandidate);
+    if (!first || !first.configured) return first;
+
+    let allIssues = Array.isArray(first.issues) ? [...first.issues] : [];
+    const total = Number(first.total || allIssues.length);
+    let startAt = Number(first.startAt || 0) + Number(first.maxResults || maxResults || pageSize);
+    let guard = 0;
+
+    while (startAt < total && guard < 20) {
+      try {
+        const page = await queryJira(config, { jql: jqlCandidate, maxResults: pageSize, startAt });
+        const pageIssues = Array.isArray(page.issues) ? page.issues : [];
+        if (!pageIssues.length) break;
+        allIssues.push(...pageIssues);
+        startAt += Number(page.maxResults || pageSize);
+        guard += 1;
+      } catch {
+        break;
+      }
+    }
+
+    const uniq = new Map();
+    allIssues.forEach((issue) => {
+      const key = String(issue?.key || "");
+      if (key && !uniq.has(key)) uniq.set(key, issue);
+    });
+
+    const issues = Array.from(uniq.values());
+    return {
+      ...first,
+      issues,
+      total: issues.length,
+      startAt: 0,
+      maxResults: pageSize
+    };
   }
 
   payload = await tryQuery(jql);
@@ -328,11 +370,28 @@ async function fetchJiraIssues(options = {}) {
   }
 
   if (assignees.length > 0 && payload && payload.configured && Array.isArray(payload.issues) && payload.issues.length === 0) {
-    // Some Jira setups return 0 for personal JQL under service auth. Use team JQL and filter locally.
-    const teamPayload = await tryQuery(config.teamJql);
-    if (teamPayload) {
-      payload = teamPayload;
-      usedTeamFallback = true;
+    // Some Jira setups return empty personal results for service auth users.
+    // Try broad queries and filter locally by assignee identity.
+    const broadCandidates = [
+      config.teamJql,
+      "assignee is not EMPTY ORDER BY updated DESC",
+      "ORDER BY updated DESC"
+    ];
+    for (const candidateJql of broadCandidates) {
+      const broadPayload = await collectIssuesForJql(candidateJql);
+      if (!broadPayload || !Array.isArray(broadPayload.issues) || broadPayload.issues.length === 0) {
+        continue;
+      }
+      const matched = filterIssuesByAssignees(broadPayload.issues, assignees);
+      if (matched.length > 0) {
+        payload = {
+          ...broadPayload,
+          issues: matched,
+          total: matched.length
+        };
+        usedTeamFallback = true;
+        break;
+      }
     }
   }
 
@@ -397,6 +456,10 @@ function normalizeAssigneeKey(value) {
     .trim()
     .toLowerCase()
     .replace(/\s+/g, " ");
+}
+
+function normalizeLooseKey(value) {
+  return normalizeAssigneeKey(value).replace(/[^a-z0-9]/g, "");
 }
 
 function assigneeLocalPart(value) {

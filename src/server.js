@@ -510,6 +510,7 @@ const server = http.createServer((req, res) => {
       const candidates = [
         overrideAssignee,
         user && user.jiraAssignee,
+        user && user.name,
         user && user.email,
         user && user.id,
         email,

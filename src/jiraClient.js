@@ -283,6 +283,11 @@ async function fetchJiraIssues(options = {}) {
     let allowedIssues = filterIssuesByAllowedStatuses(payload.issues, allowedStatuses);
     allowedIssues = filterIssuesByAllowedTypes(allowedIssues, allowedTypes);
 
+    const allowedFilterFallback = allowedIssues.length === 0 && Array.isArray(payload.issues) && payload.issues.length > 0;
+    if (allowedFilterFallback) {
+      allowedIssues = Array.isArray(payload.issues) ? payload.issues : [];
+    }
+
     let filteredIssues = allowedIssues;
     if (usedScopedFallback) {
       filteredIssues = filterIssuesByAssignees(filteredIssues, assignees);
@@ -298,7 +303,8 @@ async function fetchJiraIssues(options = {}) {
       issues: filteredIssues,
       total: filteredIssues.length,
       scopeFallback: usedScopedFallback,
-      scopeFallbackUnfiltered
+      scopeFallbackUnfiltered,
+      allowedFilterFallback
     };
   }
 

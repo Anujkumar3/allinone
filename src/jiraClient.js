@@ -255,36 +255,69 @@ async function fetchJiraIssues(options = {}) {
     jql = appendFilterToJql(config.personalJql, assigneeFilter);
   }
 
-  let payload;
+  let payload = null;
   let usedScopedFallback = false;
   let usedTeamFallback = false;
+  let lastError = null;
+  const maxResults = Number(options.maxResults || config.maxResults);
 
-  try {
-    payload = await queryJira(config, {
-      jql,
-      maxResults: Number(options.maxResults || config.maxResults)
-    });
-  } catch (error) {
+  async function tryQuery(jqlCandidate) {
+    try {
+      const result = await queryJira(config, { jql: jqlCandidate, maxResults });
+      lastError = null;
+      return result;
+    } catch (error) {
+      lastError = error;
+      return null;
+    }
+  }
+
+  payload = await tryQuery(jql);
+
+  if (!payload && assignees.length > 0) {
     // Jira Cloud can reject assignee filters when identifier formats differ (accountId vs email/username).
-    // Retry with personal JQL and then filter in memory to avoid surfacing a hard 502 to users.
-    if (!assignees.length || !/status\s+400/i.test(String(error && error.message ? error.message : ""))) {
-      throw error;
+    // Retry with progressively broader JQLs and filter locally.
+    payload = await tryQuery(config.personalJql);
+    if (payload) usedScopedFallback = true;
+
+    if (!payload) {
+      payload = await tryQuery(config.teamJql);
+      if (payload) {
+        usedScopedFallback = true;
+        usedTeamFallback = true;
+      }
     }
 
-    payload = await queryJira(config, {
-      jql: config.personalJql,
-      maxResults: Number(options.maxResults || config.maxResults)
-    });
-    usedScopedFallback = true;
+    if (!payload) {
+      payload = await tryQuery("statusCategory != Done ORDER BY updated DESC");
+      if (payload) {
+        usedScopedFallback = true;
+        usedTeamFallback = true;
+      }
+    }
+  }
+
+  if (!payload) {
+    // Keep API stable even when Jira rejects all JQL variants.
+    return {
+      configured: true,
+      issues: [],
+      total: 0,
+      message: lastError ? String(lastError.message || "Unable to fetch Jira issues") : "Unable to fetch Jira issues",
+      scopeFallback: usedScopedFallback,
+      scopeFallbackUnfiltered: false,
+      allowedFilterFallback: false,
+      teamFallback: usedTeamFallback
+    };
   }
 
   if (assignees.length > 0 && payload && payload.configured && Array.isArray(payload.issues) && payload.issues.length === 0) {
     // Some Jira setups return 0 for personal JQL under service auth. Use team JQL and filter locally.
-    payload = await queryJira(config, {
-      jql: config.teamJql,
-      maxResults: Number(options.maxResults || config.maxResults)
-    });
-    usedTeamFallback = true;
+    const teamPayload = await tryQuery(config.teamJql);
+    if (teamPayload) {
+      payload = teamPayload;
+      usedTeamFallback = true;
+    }
   }
 
   if (assignees.length > 0 && payload && payload.configured) {

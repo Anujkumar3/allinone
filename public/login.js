@@ -70,7 +70,7 @@
         const role = (data.user && data.user.role === "manager") ? "manager" : "employee";
         if (setLoggedIn(email, role)) {
           setMessage("Redirecting... (" + (role === "manager" ? "Manager" : "Engineer") + ")", "success");
-          window.location.href = "/";
+          window.location.href = "/index.html";
         }
       } catch (err) {
         setMessage("Network error. Check your connection and try again.", "error");

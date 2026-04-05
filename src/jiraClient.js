@@ -2,6 +2,10 @@ const http = require("http");
 const https = require("https");
 
 function getJiraConfig() {
+  const authModes = String(process.env.JIRA_AUTH_MODES || "basic")
+    .split(",")
+    .map((v) => v.trim().toLowerCase())
+    .filter(Boolean);
   return {
     baseUrl: process.env.JIRA_BASE_URL || "",
     email: process.env.JIRA_EMAIL || "",
@@ -13,6 +17,7 @@ function getJiraConfig() {
     maxResults: Number(process.env.JIRA_MAX_RESULTS || 8),
     teamJql: process.env.JIRA_TEAM_JQL || "assignee is not EMPTY AND statusCategory != Done ORDER BY priority DESC, updated DESC",
     teamMaxResults: Number(process.env.JIRA_TEAM_MAX_RESULTS || 50),
+    authModes: authModes.length ? authModes : ["basic"],
     requestTimeoutMs: Number(process.env.JIRA_REQUEST_TIMEOUT_MS || 12000),
     fallbackPageLimit: Number(process.env.JIRA_FALLBACK_PAGE_LIMIT || 3),
     assigneeField: process.env.JIRA_ASSIGNEE_FIELD || "assignee",
@@ -214,10 +219,13 @@ async function queryJira(config, queryOptions = {}) {
   }
 
   const basicAuthHeader = Buffer.from(`${config.email}:${config.apiToken}`).toString("base64");
-  const authSchemes = [
-    { name: "basic", value: `Basic ${basicAuthHeader}` },
-    { name: "bearer", value: `Bearer ${config.apiToken}` }
-  ];
+  const allSchemes = {
+    basic: { name: "basic", value: `Basic ${basicAuthHeader}` },
+    bearer: { name: "bearer", value: `Bearer ${config.apiToken}` }
+  };
+  const authSchemes = (Array.isArray(config.authModes) ? config.authModes : ["basic"])
+    .map((mode) => allSchemes[String(mode).toLowerCase()])
+    .filter(Boolean);
   const params = new URLSearchParams({
     jql: queryOptions.jql || config.jql,
     maxResults: String(queryOptions.maxResults || config.maxResults),

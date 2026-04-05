@@ -1250,7 +1250,7 @@ async function loadJiraIssues() {
       if (userEmailInput) userEmailInput.value = userEmail;
     }
     const controller = typeof AbortController !== "undefined" ? new AbortController() : null;
-    const timeoutId = controller ? setTimeout(() => controller.abort(), 15000) : null;
+    const timeoutId = controller ? setTimeout(() => controller.abort(), 30000) : null;
     const endpoint = sessionEmail
       ? "/api/jira/issues?email=" + encodeURIComponent(sessionEmail)
       : "/api/jira/issues";

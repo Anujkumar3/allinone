@@ -13,6 +13,8 @@ function getJiraConfig() {
     maxResults: Number(process.env.JIRA_MAX_RESULTS || 8),
     teamJql: process.env.JIRA_TEAM_JQL || "assignee is not EMPTY AND statusCategory != Done ORDER BY priority DESC, updated DESC",
     teamMaxResults: Number(process.env.JIRA_TEAM_MAX_RESULTS || 50),
+    requestTimeoutMs: Number(process.env.JIRA_REQUEST_TIMEOUT_MS || 12000),
+    fallbackPageLimit: Number(process.env.JIRA_FALLBACK_PAGE_LIMIT || 3),
     assigneeField: process.env.JIRA_ASSIGNEE_FIELD || "assignee",
     allowSelfSigned: String(process.env.JIRA_ALLOW_SELF_SIGNED || "false").toLowerCase() === "true"
   };
@@ -78,6 +80,10 @@ function requestJson(url, headers, allowSelfSigned) {
           reject(new Error("Invalid JSON from Jira response"));
         }
       });
+    });
+
+    req.setTimeout(Number(process.env.JIRA_REQUEST_TIMEOUT_MS || 12000), () => {
+      req.destroy(new Error("Jira request timed out"));
     });
 
     req.on("error", (error) => reject(error));
@@ -280,6 +286,7 @@ async function fetchJiraIssues(options = {}) {
   let lastError = null;
   const maxResults = Number(options.maxResults || config.maxResults);
   const pageSize = Math.max(50, Math.min(200, Number(config.teamMaxResults || 100)));
+  const fallbackPageLimit = Math.max(1, Math.min(10, Number(config.fallbackPageLimit || 3)));
 
   async function tryQuery(jqlCandidate) {
     try {
@@ -301,7 +308,7 @@ async function fetchJiraIssues(options = {}) {
     let startAt = Number(first.startAt || 0) + Number(first.maxResults || maxResults || pageSize);
     let guard = 0;
 
-    while (startAt < total && guard < 20) {
+    while (startAt < total && guard < fallbackPageLimit) {
       try {
         const page = await queryJira(config, { jql: jqlCandidate, maxResults: pageSize, startAt });
         const pageIssues = Array.isArray(page.issues) ? page.issues : [];
@@ -374,8 +381,7 @@ async function fetchJiraIssues(options = {}) {
     // Try broad queries and filter locally by assignee identity.
     const broadCandidates = [
       config.teamJql,
-      "assignee is not EMPTY ORDER BY updated DESC",
-      "ORDER BY updated DESC"
+      "assignee is not EMPTY AND updated >= -120d ORDER BY updated DESC"
     ];
     for (const candidateJql of broadCandidates) {
       const broadPayload = await collectIssuesForJql(candidateJql);

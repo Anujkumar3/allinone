@@ -142,6 +142,29 @@ function filterIssuesByAllowedTypes(issues, allowedTypes) {
   });
 }
 
+function filterIssuesByAssignees(issues, assignees) {
+  if (!Array.isArray(issues) || !issues.length) return [];
+  if (!Array.isArray(assignees) || !assignees.length) return issues;
+
+  const exact = new Set();
+  const localParts = new Set();
+  assignees.forEach((value) => {
+    const key = normalizeAssigneeKey(value);
+    if (!key) return;
+    exact.add(key);
+    const local = assigneeLocalPart(key);
+    if (local) localParts.add(local);
+  });
+
+  return issues.filter((issue) => {
+    const assigneeKey = normalizeAssigneeKey(issue && issue.assignee ? issue.assignee : "");
+    if (!assigneeKey) return false;
+    if (exact.has(assigneeKey)) return true;
+    const local = assigneeLocalPart(assigneeKey);
+    return local ? localParts.has(local) : false;
+  });
+}
+
 async function queryJira(config, queryOptions = {}) {
   if (!config.baseUrl || !config.email || !config.apiToken) {
     return {
@@ -218,20 +241,41 @@ async function fetchJiraIssues(options = {}) {
     jql = appendFilterToJql(config.personalJql, assigneeFilter);
   }
 
-  const payload = await queryJira(config, {
-    jql,
-    maxResults: Number(options.maxResults || config.maxResults)
-  });
+  let payload;
+  let usedScopedFallback = false;
+
+  try {
+    payload = await queryJira(config, {
+      jql,
+      maxResults: Number(options.maxResults || config.maxResults)
+    });
+  } catch (error) {
+    // Jira Cloud can reject assignee filters when identifier formats differ (accountId vs email/username).
+    // Retry with personal JQL and then filter in memory to avoid surfacing a hard 502 to users.
+    if (!assignees.length || !/status\s+400/i.test(String(error && error.message ? error.message : ""))) {
+      throw error;
+    }
+
+    payload = await queryJira(config, {
+      jql: config.personalJql,
+      maxResults: Number(options.maxResults || config.maxResults)
+    });
+    usedScopedFallback = true;
+  }
 
   if (assignees.length > 0 && payload && payload.configured) {
     const allowedStatuses = parseAllowedStatuses(config.personalAllowedStatuses);
     const allowedTypes = parseAllowedStatuses(config.personalAllowedTypes);
     let filteredIssues = filterIssuesByAllowedStatuses(payload.issues, allowedStatuses);
     filteredIssues = filterIssuesByAllowedTypes(filteredIssues, allowedTypes);
+    if (usedScopedFallback) {
+      filteredIssues = filterIssuesByAssignees(filteredIssues, assignees);
+    }
     return {
       ...payload,
       issues: filteredIssues,
-      total: filteredIssues.length
+      total: filteredIssues.length,
+      scopeFallback: usedScopedFallback
     };
   }
 

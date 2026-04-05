@@ -1279,6 +1279,11 @@ async function loadJiraIssues() {
     renderAlerts();
     mergeTasksFromJira();
     updateDashboardKpiCards();
+
+    // Auto-load team summary for managers
+    if (selectedManagerId) {
+      loadTeamSummary();
+    }
   } catch (error) {
     const isTimeout = error && (error.name === "AbortError");
     jiraStatus.textContent = isTimeout
@@ -2733,5 +2738,11 @@ function wireCalendarNav() {
     });
   }
 }
+
+console.log(
+  "%c🌍 Earth Time: " + new Date().toLocaleString(),
+  "color: #1e90ff; font-size: 14px; font-weight: bold;"
+);
+console.log("Dashboard initialized at UTC: " + new Date().toISOString());
 
 init();

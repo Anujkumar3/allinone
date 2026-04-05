@@ -198,6 +198,56 @@ function buildUserIdentityCandidates(userEmail, localContext, employeeRecord) {
   };
 }
 
+function extractIssuesFromSummaryText(summaryText) {
+  const lines = String(summaryText || "").split(/\r?\n/);
+  const issues = [];
+  const seen = new Set();
+
+  lines.forEach((line) => {
+    const match = String(line).match(/\b([A-Z][A-Z0-9]+-\d+)\b\s*:?\s*(.*)$/i);
+    if (!match) return;
+    const key = String(match[1] || "").toUpperCase();
+    if (!key || seen.has(key)) return;
+    seen.add(key);
+    issues.push({
+      key,
+      summary: String(match[2] || "").trim() || "Imported from weekly summary",
+      status: "Reported",
+      issueType: "Summary Item",
+      priority: "-",
+      assignee: "",
+      created: "",
+      updated: "",
+      dueDate: "",
+      labels: ["weekly-summary-fallback"],
+      url: process.env.JIRA_BASE_URL ? `${String(process.env.JIRA_BASE_URL).replace(/\/$/, "")}/browse/${key}` : ""
+    });
+  });
+
+  return issues;
+}
+
+function buildWeeklySummaryIssueFallback(userEmail, hierarchyEmployees) {
+  if (!userEmail) return [];
+  const context = resolveUserContext(hierarchyEmployees, userEmail);
+  const user = context && context.user ? context.user : null;
+  const identity = buildUserIdentityCandidates(userEmail, context, user);
+  const summariesData = readSummaries(weeklySummariesFile);
+  const summaries = Array.isArray(summariesData?.summaries) ? summariesData.summaries : [];
+  const matchingSummaries = summaries
+    .filter((entry) => matchesUserIdentity(entry?.userEmail, identity.compact, identity.compactNoDigits) || matchesUserIdentity(entry?.userName, identity.compact, identity.compactNoDigits))
+    .sort((a, b) => String(b?.submittedAt || "").localeCompare(String(a?.submittedAt || "")));
+
+  for (const summary of matchingSummaries) {
+    const issues = extractIssuesFromSummaryText(summary?.summaryText);
+    if (issues.length > 0) {
+      return issues;
+    }
+  }
+
+  return [];
+}
+
 function computeSummaryStreak(summaries, identity) {
   const submittedWeeks = new Set(
     (summaries || [])
@@ -521,6 +571,47 @@ const server = http.createServer((req, res) => {
       if (candidates.length) {
         options = { assignees: candidates };
       }
+
+      fetchJiraIssues(options)
+        .then((payload) => {
+          if (Array.isArray(payload?.issues) && payload.issues.length > 0) {
+            writeJson(res, 200, payload);
+            return;
+          }
+
+          const fallbackIssues = buildWeeklySummaryIssueFallback(email, hierarchy.employees);
+          if (fallbackIssues.length > 0) {
+            writeJson(res, 200, {
+              ...payload,
+              issues: fallbackIssues,
+              total: fallbackIssues.length,
+              summaryFallback: true
+            });
+            return;
+          }
+
+          writeJson(res, 200, payload);
+        })
+        .catch((error) => {
+          const fallbackIssues = buildWeeklySummaryIssueFallback(email, hierarchy.employees);
+          if (fallbackIssues.length > 0) {
+            writeJson(res, 200, {
+              configured: true,
+              issues: fallbackIssues,
+              total: fallbackIssues.length,
+              message: error.message,
+              summaryFallback: true
+            });
+            return;
+          }
+
+          writeJson(res, 502, {
+            configured: true,
+            issues: [],
+            message: error.message
+          });
+        });
+      return;
     }
 
     fetchJiraIssues(options)

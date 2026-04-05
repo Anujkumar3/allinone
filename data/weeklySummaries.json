@@ -39,6 +39,245 @@
       "managerId": "deepalaxmi-hegde-k",
       "summaryText": "This week I worked on:\n- WS-1704692: WSO-UI & Server Update code flow and design docs for existing component and refactoring\n- WS-1765691: Ason: Add support for Tunnel rate column in SNC screen\n- WS-1296784: Persist job details and CLOG information in database which is required for re-initializing cache\n- WS-1303622: ODL Netconf Library Upgrade in GPC Connector and WSO\n- WS-1304268: Ensure Swagger lists only valid Status Code based on the API definition.\n- WS-1305031: Singleton instance of RestTemplate to be used in WSO\n- WS-1431308: Error handling improvements\n- WS-1431556: WSO | Prediction based CO | Popup error messages don't have required user action(all applicable messages correction required)\n- WS-1484088: Clean up and Update NE version (System Preference ,Application properties  & mnc shared util changes)\n- WS-1560296: WSO_SVT_Margin_Based_CO: Upload node is showing success in upload topology Jobs-run History Even for Down NE\n- WS-1591025: JOBs ENUM fetch mechanism enhancement\n- WS-1679924: i18n support for WSO - Phase 2\n- WS-1384374: Move all hql/sql to Data Source Configuration file\n- WS-1379527: version compatibility validation\n- WSTEACAT-6478: Last up transition time not showing in the 360 view",
       "submittedAt": "2026-04-02T17:04:54.063Z"
+    },
+    {
+      "weekKey": "2026-03-30",
+      "userEmail": "pramod.haviruth@nokia.com",
+      "userName": "Pramod Haviruth",
+      "managerId": "deepalaxmi-hegde-k",
+      "summaryText": "This week I worked on:\n- WS-1425367: Java upgrade to 11 in WSO\n- WS-1639452: Database connection pooling optimization\n- WS-1582091: API response time enhancement\n- WS-1721044: Security vulnerability fixes in dependencies\n- WS-1684521: Logging framework standardization\n- WS-1753482: Performance testing and optimization\n- WS-1698914: Code review improvements and documentation\n- WS-1765234: Database migration for microservices",
+      "submittedAt": "2026-04-02T17:15:00.000Z"
+    },
+    {
+      "userEmail": "deepalaxmi.hegde.k@nokia.com",
+      "userName": "Deepalaxmi Hegde K",
+      "managerId": null,
+      "summaryText": "This week I worked on:\n- WS-1400000: Task description\n- WS-1400001: Task description\n- WS-1400002: Task description\n- WS-1400003: Task description\n- WS-1400004: Task description",
+      "submittedAt": "2026-04-05T12:49:08.498Z"
+    },
+    {
+      "userEmail": "ajay.balakrishnan@nokia.com",
+      "userName": "Ajay Balakrishnan",
+      "managerId": "deepalaxmi-hegde-k",
+      "summaryText": "This week I worked on:\n- WS-1400100: Task description\n- WS-1400101: Task description\n- WS-1400102: Task description\n- WS-1400103: Task description\n- WS-1400104: Task description\n- WS-1400105: Task description",
+      "submittedAt": "2026-04-05T12:49:08.503Z"
+    },
+    {
+      "userEmail": "ambresh.a@nokia.com",
+      "userName": "Ambresh A",
+      "managerId": "deepalaxmi-hegde-k",
+      "summaryText": "This week I worked on:\n- WS-1400200: Task description\n- WS-1400201: Task description\n- WS-1400202: Task description\n- WS-1400203: Task description\n- WS-1400204: Task description\n- WS-1400205: Task description\n- WS-1400206: Task description",
+      "submittedAt": "2026-04-05T12:49:08.503Z"
+    },
+    {
+      "userEmail": "amulya.ps@nokia.com",
+      "userName": "Amulya PS",
+      "managerId": "deepalaxmi-hegde-k",
+      "summaryText": "This week I worked on:\n- WS-1400300: Task description\n- WS-1400301: Task description\n- WS-1400302: Task description\n- WS-1400303: Task description\n- WS-1400304: Task description\n- WS-1400305: Task description\n- WS-1400306: Task description\n- WS-1400307: Task description",
+      "submittedAt": "2026-04-05T12:49:08.503Z"
+    },
+    {
+      "userEmail": "biswabhusan.mishra@nokia.com",
+      "userName": "Biswabhusan Mishra",
+      "managerId": "deepalaxmi-hegde-k",
+      "summaryText": "This week I worked on:\n- WS-1400500: Task description\n- WS-1400501: Task description\n- WS-1400502: Task description\n- WS-1400503: Task description\n- WS-1400504: Task description\n- WS-1400505: Task description",
+      "submittedAt": "2026-04-05T12:49:08.503Z"
+    },
+    {
+      "userEmail": "chamarthi.dedeepya@nokia.com",
+      "userName": "Chamarthi Dedeepya",
+      "managerId": "deepalaxmi-hegde-k",
+      "summaryText": "This week I worked on:\n- WS-1400600: Task description\n- WS-1400601: Task description\n- WS-1400602: Task description\n- WS-1400603: Task description\n- WS-1400604: Task description\n- WS-1400605: Task description\n- WS-1400606: Task description",
+      "submittedAt": "2026-04-05T12:49:08.503Z"
+    },
+    {
+      "userEmail": "cheruvu.tejaswini@nokia.com",
+      "userName": "Cheruvu Tejaswini",
+      "managerId": "deepalaxmi-hegde-k",
+      "summaryText": "This week I worked on:\n- WS-1400700: Task description\n- WS-1400701: Task description\n- WS-1400702: Task description\n- WS-1400703: Task description\n- WS-1400704: Task description\n- WS-1400705: Task description\n- WS-1400706: Task description\n- WS-1400707: Task description",
+      "submittedAt": "2026-04-05T12:49:08.503Z"
+    },
+    {
+      "userEmail": "deepak.n@nokia.com",
+      "userName": "Deepak 2. N",
+      "managerId": "deepalaxmi-hegde-k",
+      "summaryText": "This week I worked on:\n- WS-1400800: Task description\n- WS-1400801: Task description\n- WS-1400802: Task description\n- WS-1400803: Task description\n- WS-1400804: Task description",
+      "submittedAt": "2026-04-05T12:49:08.503Z"
+    },
+    {
+      "userEmail": "dhanush.n@nokia.com",
+      "userName": "Dhanush N",
+      "managerId": "deepalaxmi-hegde-k",
+      "summaryText": "This week I worked on:\n- WS-1400900: Task description\n- WS-1400901: Task description\n- WS-1400902: Task description\n- WS-1400903: Task description\n- WS-1400904: Task description\n- WS-1400905: Task description",
+      "submittedAt": "2026-04-05T12:49:08.503Z"
+    },
+    {
+      "userEmail": "dileep.n@nokia.com",
+      "userName": "Dileep N",
+      "managerId": "deepalaxmi-hegde-k",
+      "summaryText": "This week I worked on:\n- WS-1401000: Task description\n- WS-1401001: Task description\n- WS-1401002: Task description\n- WS-1401003: Task description\n- WS-1401004: Task description\n- WS-1401005: Task description\n- WS-1401006: Task description",
+      "submittedAt": "2026-04-05T12:49:08.503Z"
+    },
+    {
+      "userEmail": "eliza.priyadarshinee@nokia.com",
+      "userName": "Eliza Priyadarshinee",
+      "managerId": "deepalaxmi-hegde-k",
+      "summaryText": "This week I worked on:\n- WS-1401100: Task description\n- WS-1401101: Task description\n- WS-1401102: Task description\n- WS-1401103: Task description\n- WS-1401104: Task description\n- WS-1401105: Task description\n- WS-1401106: Task description\n- WS-1401107: Task description",
+      "submittedAt": "2026-04-05T12:49:08.503Z"
+    },
+    {
+      "userEmail": "jayamani.t@nokia.com",
+      "userName": "Jayamani T",
+      "managerId": "deepalaxmi-hegde-k",
+      "summaryText": "This week I worked on:\n- WS-1401200: Task description\n- WS-1401201: Task description\n- WS-1401202: Task description\n- WS-1401203: Task description\n- WS-1401204: Task description",
+      "submittedAt": "2026-04-05T12:49:08.503Z"
+    },
+    {
+      "userEmail": "kavya.1.m@nokia.com",
+      "userName": "Kavya 1. M",
+      "managerId": "deepalaxmi-hegde-k",
+      "summaryText": "This week I worked on:\n- WS-1401300: Task description\n- WS-1401301: Task description\n- WS-1401302: Task description\n- WS-1401303: Task description\n- WS-1401304: Task description\n- WS-1401305: Task description",
+      "submittedAt": "2026-04-05T12:49:08.503Z"
+    },
+    {
+      "userEmail": "kiran.mohan.e@nokia.com",
+      "userName": "Kiran Mohan E",
+      "managerId": "deepalaxmi-hegde-k",
+      "summaryText": "This week I worked on:\n- WS-1401400: Task description\n- WS-1401401: Task description\n- WS-1401402: Task description\n- WS-1401403: Task description\n- WS-1401404: Task description\n- WS-1401405: Task description\n- WS-1401406: Task description",
+      "submittedAt": "2026-04-05T12:49:08.503Z"
+    },
+    {
+      "userEmail": "krishnama_bala.srinivas_prabhu@nokia.com",
+      "userName": "Krishnama Bala Srinivas Prabhu",
+      "managerId": "deepalaxmi-hegde-k",
+      "summaryText": "This week I worked on:\n- WS-1401500: Task description\n- WS-1401501: Task description\n- WS-1401502: Task description\n- WS-1401503: Task description\n- WS-1401504: Task description\n- WS-1401505: Task description\n- WS-1401506: Task description\n- WS-1401507: Task description",
+      "submittedAt": "2026-04-05T12:49:08.503Z"
+    },
+    {
+      "userEmail": "mohammed.mizfar.n@nokia.com",
+      "userName": "Mohammed Mizfar N",
+      "managerId": "deepalaxmi-hegde-k",
+      "summaryText": "This week I worked on:\n- WS-1401600: Task description\n- WS-1401601: Task description\n- WS-1401602: Task description\n- WS-1401603: Task description\n- WS-1401604: Task description",
+      "submittedAt": "2026-04-05T12:49:08.503Z"
+    },
+    {
+      "userEmail": "naveen.uppaluru@nokia.com",
+      "userName": "Naveen Uppaluru",
+      "managerId": "deepalaxmi-hegde-k",
+      "summaryText": "This week I worked on:\n- WS-1401700: Task description\n- WS-1401701: Task description\n- WS-1401702: Task description\n- WS-1401703: Task description\n- WS-1401704: Task description\n- WS-1401705: Task description",
+      "submittedAt": "2026-04-05T12:49:08.503Z"
+    },
+    {
+      "userEmail": "nidhi.balachandra.bhat@nokia.com",
+      "userName": "Nidhi Balachandra Bhat",
+      "managerId": "deepalaxmi-hegde-k",
+      "summaryText": "This week I worked on:\n- WS-1401800: Task description\n- WS-1401801: Task description\n- WS-1401802: Task description\n- WS-1401803: Task description\n- WS-1401804: Task description\n- WS-1401805: Task description\n- WS-1401806: Task description",
+      "submittedAt": "2026-04-05T12:49:08.503Z"
+    },
+    {
+      "userEmail": "prabhulinga.prabhulinga@nokia.com",
+      "userName": "Prabhulinga Prabhulinga",
+      "managerId": "deepalaxmi-hegde-k",
+      "summaryText": "This week I worked on:\n- WS-1401900: Task description\n- WS-1401901: Task description\n- WS-1401902: Task description\n- WS-1401903: Task description\n- WS-1401904: Task description\n- WS-1401905: Task description\n- WS-1401906: Task description\n- WS-1401907: Task description",
+      "submittedAt": "2026-04-05T12:49:08.503Z"
+    },
+    {
+      "userEmail": "priya.s.m@nokia.com",
+      "userName": "Priya S M",
+      "managerId": "deepalaxmi-hegde-k",
+      "summaryText": "This week I worked on:\n- WS-1402100: Task description\n- WS-1402101: Task description\n- WS-1402102: Task description\n- WS-1402103: Task description\n- WS-1402104: Task description\n- WS-1402105: Task description",
+      "submittedAt": "2026-04-05T12:49:08.503Z"
+    },
+    {
+      "userEmail": "priyanka.1.s@nokia.com",
+      "userName": "Priyanka 1. S",
+      "managerId": "deepalaxmi-hegde-k",
+      "summaryText": "This week I worked on:\n- WS-1402200: Task description\n- WS-1402201: Task description\n- WS-1402202: Task description\n- WS-1402203: Task description\n- WS-1402204: Task description\n- WS-1402205: Task description\n- WS-1402206: Task description",
+      "submittedAt": "2026-04-05T12:49:08.503Z"
+    },
+    {
+      "userEmail": "puneeth.g.l@nokia.com",
+      "userName": "Puneeth G L",
+      "managerId": "deepalaxmi-hegde-k",
+      "summaryText": "This week I worked on:\n- WS-1402300: Task description\n- WS-1402301: Task description\n- WS-1402302: Task description\n- WS-1402303: Task description\n- WS-1402304: Task description\n- WS-1402305: Task description\n- WS-1402306: Task description\n- WS-1402307: Task description",
+      "submittedAt": "2026-04-05T12:49:08.503Z"
+    },
+    {
+      "userEmail": "radhika.h@nokia.com",
+      "userName": "Radhika H",
+      "managerId": "deepalaxmi-hegde-k",
+      "summaryText": "This week I worked on:\n- WS-1402400: Task description\n- WS-1402401: Task description\n- WS-1402402: Task description\n- WS-1402403: Task description\n- WS-1402404: Task description",
+      "submittedAt": "2026-04-05T12:49:08.503Z"
+    },
+    {
+      "userEmail": "ravi.prasad@nokia.com",
+      "userName": "Ravi Prasad",
+      "managerId": "deepalaxmi-hegde-k",
+      "summaryText": "This week I worked on:\n- WS-1402600: Task description\n- WS-1402601: Task description\n- WS-1402602: Task description\n- WS-1402603: Task description\n- WS-1402604: Task description\n- WS-1402605: Task description\n- WS-1402606: Task description",
+      "submittedAt": "2026-04-05T12:49:08.503Z"
+    },
+    {
+      "userEmail": "richi.mathur@nokia.com",
+      "userName": "Richi Mathur",
+      "managerId": "deepalaxmi-hegde-k",
+      "summaryText": "This week I worked on:\n- WS-1402700: Task description\n- WS-1402701: Task description\n- WS-1402702: Task description\n- WS-1402703: Task description\n- WS-1402704: Task description\n- WS-1402705: Task description\n- WS-1402706: Task description\n- WS-1402707: Task description",
+      "submittedAt": "2026-04-05T12:49:08.503Z"
+    },
+    {
+      "userEmail": "s.komathy@nokia.com",
+      "userName": "S Komathy",
+      "managerId": "deepalaxmi-hegde-k",
+      "summaryText": "This week I worked on:\n- WS-1402800: Task description\n- WS-1402801: Task description\n- WS-1402802: Task description\n- WS-1402803: Task description\n- WS-1402804: Task description",
+      "submittedAt": "2026-04-05T12:49:08.503Z"
+    },
+    {
+      "userEmail": "sainath.nair@nokia.com",
+      "userName": "Sainath Nair",
+      "managerId": "deepalaxmi-hegde-k",
+      "summaryText": "This week I worked on:\n- WS-1402900: Task description\n- WS-1402901: Task description\n- WS-1402902: Task description\n- WS-1402903: Task description\n- WS-1402904: Task description\n- WS-1402905: Task description",
+      "submittedAt": "2026-04-05T12:49:08.503Z"
+    },
+    {
+      "userEmail": "shreyash.sahu@nokia.com",
+      "userName": "Shreyash Sahu",
+      "managerId": "deepalaxmi-hegde-k",
+      "summaryText": "This week I worked on:\n- WS-1403000: Task description\n- WS-1403001: Task description\n- WS-1403002: Task description\n- WS-1403003: Task description\n- WS-1403004: Task description\n- WS-1403005: Task description\n- WS-1403006: Task description",
+      "submittedAt": "2026-04-05T12:49:08.503Z"
+    },
+    {
+      "userEmail": "sindhu.murugesan@nokia.com",
+      "userName": "Sindhu Murugesan",
+      "managerId": "deepalaxmi-hegde-k",
+      "summaryText": "This week I worked on:\n- WS-1403100: Task description\n- WS-1403101: Task description\n- WS-1403102: Task description\n- WS-1403103: Task description\n- WS-1403104: Task description\n- WS-1403105: Task description\n- WS-1403106: Task description\n- WS-1403107: Task description",
+      "submittedAt": "2026-04-05T12:49:08.503Z"
+    },
+    {
+      "userEmail": "sneha.2.sneha@nokia.com",
+      "userName": "Sneha 2. Sneha",
+      "managerId": "deepalaxmi-hegde-k",
+      "summaryText": "This week I worked on:\n- WS-1403200: Task description\n- WS-1403201: Task description\n- WS-1403202: Task description\n- WS-1403203: Task description\n- WS-1403204: Task description",
+      "submittedAt": "2026-04-05T12:49:08.503Z"
+    },
+    {
+      "userEmail": "stefano.mauri@nokia.com",
+      "userName": "Stefano Mauri",
+      "managerId": "deepalaxmi-hegde-k",
+      "summaryText": "This week I worked on:\n- WS-1403300: Task description\n- WS-1403301: Task description\n- WS-1403302: Task description\n- WS-1403303: Task description\n- WS-1403304: Task description\n- WS-1403305: Task description",
+      "submittedAt": "2026-04-05T12:49:08.503Z"
+    },
+    {
+      "userEmail": "vagish.gupta@nokia.com",
+      "userName": "Vagish Gupta",
+      "managerId": "deepalaxmi-hegde-k",
+      "summaryText": "This week I worked on:\n- WS-1403500: Task description\n- WS-1403501: Task description\n- WS-1403502: Task description\n- WS-1403503: Task description\n- WS-1403504: Task description\n- WS-1403505: Task description\n- WS-1403506: Task description\n- WS-1403507: Task description",
+      "submittedAt": "2026-04-05T12:49:08.503Z"
+    },
+    {
+      "userEmail": "yasaswini.vissa@nokia.com",
+      "userName": "Yasaswini Vissa",
+      "managerId": "deepalaxmi-hegde-k",
+      "summaryText": "This week I worked on:\n- WS-1403600: Task description\n- WS-1403601: Task description\n- WS-1403602: Task description\n- WS-1403603: Task description\n- WS-1403604: Task description",
+      "submittedAt": "2026-04-05T12:49:08.503Z"
     }
   ]
 }

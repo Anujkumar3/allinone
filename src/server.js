@@ -227,27 +227,6 @@ function extractIssuesFromSummaryText(summaryText) {
   return issues;
 }
 
-function buildWeeklySummaryIssueFallback(userEmail, hierarchyEmployees) {
-  if (!userEmail) return [];
-  const context = resolveUserContext(hierarchyEmployees, userEmail);
-  const user = context && context.user ? context.user : null;
-  const identity = buildUserIdentityCandidates(userEmail, context, user);
-  const summariesData = readSummaries(weeklySummariesFile);
-  const summaries = Array.isArray(summariesData?.summaries) ? summariesData.summaries : [];
-  const matchingSummaries = summaries
-    .filter((entry) => matchesUserIdentity(entry?.userEmail, identity.compact, identity.compactNoDigits) || matchesUserIdentity(entry?.userName, identity.compact, identity.compactNoDigits))
-    .sort((a, b) => String(b?.submittedAt || "").localeCompare(String(a?.submittedAt || "")));
-
-  for (const summary of matchingSummaries) {
-    const issues = extractIssuesFromSummaryText(summary?.summaryText);
-    if (issues.length > 0) {
-      return issues;
-    }
-  }
-
-  return [];
-}
-
 function computeSummaryStreak(summaries, identity) {
   const submittedWeeks = new Set(
     (summaries || [])
@@ -574,37 +553,9 @@ const server = http.createServer((req, res) => {
 
       fetchJiraIssues(options)
         .then((payload) => {
-          if (Array.isArray(payload?.issues) && payload.issues.length > 0) {
-            writeJson(res, 200, payload);
-            return;
-          }
-
-          const fallbackIssues = buildWeeklySummaryIssueFallback(email, hierarchy.employees);
-          if (fallbackIssues.length > 0) {
-            writeJson(res, 200, {
-              ...payload,
-              issues: fallbackIssues,
-              total: fallbackIssues.length,
-              summaryFallback: true
-            });
-            return;
-          }
-
           writeJson(res, 200, payload);
         })
         .catch((error) => {
-          const fallbackIssues = buildWeeklySummaryIssueFallback(email, hierarchy.employees);
-          if (fallbackIssues.length > 0) {
-            writeJson(res, 200, {
-              configured: true,
-              issues: fallbackIssues,
-              total: fallbackIssues.length,
-              message: error.message,
-              summaryFallback: true
-            });
-            return;
-          }
-
           writeJson(res, 502, {
             configured: true,
             issues: [],

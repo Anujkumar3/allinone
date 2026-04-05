@@ -16,7 +16,7 @@
     {
       "id": "ajay-balakrishnan",
       "name": "Ajay Balakrishnan",
-      "email": null,
+      "email": "ajay.balakrishnan@nokia.com",
       "jiraAssignee": "Ajay Balakrishnan",
       "employmentType": "Nokia",
       "role": "specialist",
@@ -24,12 +24,15 @@
       "orgUnit": "Deepalaxmi Hegde K Team",
       "location": "IN/Bangalore/Manyata E2",
       "workMode": "unspecified",
-      "managerId": "deepalaxmi-hegde-k"
+      "managerId": "deepalaxmi-hegde-k",
+      "aliases": [
+        "Ajay Balakrishnan"
+      ]
     },
     {
       "id": "ambresh-a",
       "name": "Ambresh A",
-      "email": null,
+      "email": "ambresh.a@nokia.com",
       "jiraAssignee": "Ambresh A",
       "employmentType": "EXT-Nokia",
       "role": "contractor",
@@ -37,12 +40,15 @@
       "orgUnit": "Deepalaxmi Hegde K Team",
       "location": "IN/Bangalore/Manyata E2",
       "workMode": "unspecified",
-      "managerId": "deepalaxmi-hegde-k"
+      "managerId": "deepalaxmi-hegde-k",
+      "aliases": [
+        "Ambresh A"
+      ]
     },
     {
       "id": "amulya-ps",
       "name": "Amulya PS",
-      "email": null,
+      "email": "amulya.ps@nokia.com",
       "jiraAssignee": "Amulya PS",
       "employmentType": "EXT-Nokia",
       "role": "contractor",
@@ -50,7 +56,10 @@
       "orgUnit": "Deepalaxmi Hegde K Team",
       "location": "IN/Bangalore/Manyata E2",
       "workMode": "remote",
-      "managerId": "deepalaxmi-hegde-k"
+      "managerId": "deepalaxmi-hegde-k",
+      "aliases": [
+        "Amulya PS"
+      ]
     },
     {
       "id": "anuj-kumar",
@@ -71,7 +80,7 @@
     {
       "id": "biswabhusan-mishra",
       "name": "Biswabhusan Mishra",
-      "email": null,
+      "email": "biswabhusan.mishra@nokia.com",
       "jiraAssignee": "Biswabhusan Mishra",
       "employmentType": "Nokia",
       "role": "specialist",
@@ -79,12 +88,15 @@
       "orgUnit": "Deepalaxmi Hegde K Team",
       "location": "IN/Bangalore/Manyata E2",
       "workMode": "office",
-      "managerId": "deepalaxmi-hegde-k"
+      "managerId": "deepalaxmi-hegde-k",
+      "aliases": [
+        "Biswabhusan Mishra"
+      ]
     },
     {
       "id": "chamarthi-dedeepya",
       "name": "Chamarthi Dedeepya",
-      "email": null,
+      "email": "chamarthi.dedeepya@nokia.com",
       "jiraAssignee": "Chamarthi Dedeepya",
       "employmentType": "Nokia",
       "role": "engineer",
@@ -92,12 +104,15 @@
       "orgUnit": "Deepalaxmi Hegde K Team",
       "location": "IN/Bangalore/Manyata E2",
       "workMode": "unspecified",
-      "managerId": "deepalaxmi-hegde-k"
+      "managerId": "deepalaxmi-hegde-k",
+      "aliases": [
+        "Chamarthi Dedeepya"
+      ]
     },
     {
       "id": "cheruvu-tejaswini",
       "name": "Cheruvu Tejaswini",
-      "email": null,
+      "email": "cheruvu.tejaswini@nokia.com",
       "jiraAssignee": "Cheruvu Tejaswini",
       "employmentType": "Nokia",
       "role": "specialist",
@@ -105,7 +120,10 @@
       "orgUnit": "Deepalaxmi Hegde K Team",
       "location": "IN/Bangalore/Manyata E2",
       "workMode": "unspecified",
-      "managerId": "deepalaxmi-hegde-k"
+      "managerId": "deepalaxmi-hegde-k",
+      "aliases": [
+        "Cheruvu Tejaswini"
+      ]
     },
     {
       "id": "deepak-2-n",
@@ -129,7 +147,7 @@
     {
       "id": "dhanush-n",
       "name": "Dhanush N",
-      "email": null,
+      "email": "dhanush.n@nokia.com",
       "jiraAssignee": "Dhanush N",
       "employmentType": "Nokia",
       "role": "lead",
@@ -137,12 +155,15 @@
       "orgUnit": "Deepalaxmi Hegde K Team",
       "location": "IN/Bangalore/Manyata E2",
       "workMode": "unspecified",
-      "managerId": "deepalaxmi-hegde-k"
+      "managerId": "deepalaxmi-hegde-k",
+      "aliases": [
+        "Dhanush N"
+      ]
     },
     {
       "id": "dileep-n",
       "name": "Dileep N",
-      "email": null,
+      "email": "dileep.n@nokia.com",
       "jiraAssignee": "Dileep N",
       "employmentType": "EXT-Nokia",
       "role": "contractor",
@@ -150,12 +171,15 @@
       "orgUnit": "Deepalaxmi Hegde K Team",
       "location": "IN/Bangalore/Manyata E2",
       "workMode": "unspecified",
-      "managerId": "deepalaxmi-hegde-k"
+      "managerId": "deepalaxmi-hegde-k",
+      "aliases": [
+        "Dileep N"
+      ]
     },
     {
       "id": "eliza-priyadarshinee",
       "name": "Eliza Priyadarshinee",
-      "email": null,
+      "email": "eliza.priyadarshinee@nokia.com",
       "jiraAssignee": "Eliza Priyadarshinee",
       "employmentType": "Nokia",
       "role": "specialist",
@@ -163,12 +187,15 @@
       "orgUnit": "Deepalaxmi Hegde K Team",
       "location": "IN/Bangalore/Manyata E2",
       "workMode": "unspecified",
-      "managerId": "deepalaxmi-hegde-k"
+      "managerId": "deepalaxmi-hegde-k",
+      "aliases": [
+        "Eliza Priyadarshinee"
+      ]
     },
     {
       "id": "jayamani-t",
       "name": "Jayamani T",
-      "email": null,
+      "email": "jayamani.t@nokia.com",
       "jiraAssignee": "Jayamani T",
       "employmentType": "EXT-Nokia",
       "role": "contractor",
@@ -176,12 +203,15 @@
       "orgUnit": "Deepalaxmi Hegde K Team",
       "location": "IN/Bangalore/Manyata E2",
       "workMode": "unspecified",
-      "managerId": "deepalaxmi-hegde-k"
+      "managerId": "deepalaxmi-hegde-k",
+      "aliases": [
+        "Jayamani T"
+      ]
     },
     {
       "id": "kavya-1-m",
       "name": "Kavya 1. M",
-      "email": null,
+      "email": "kavya.1.m@nokia.com",
       "jiraAssignee": "Kavya 1. M",
       "employmentType": "Nokia",
       "role": "specialist",
@@ -189,12 +219,15 @@
       "orgUnit": "Deepalaxmi Hegde K Team",
       "location": "IN/Bangalore/Manyata E2",
       "workMode": "unspecified",
-      "managerId": "deepalaxmi-hegde-k"
+      "managerId": "deepalaxmi-hegde-k",
+      "aliases": [
+        "Kavya 1. M"
+      ]
     },
     {
       "id": "kiran-mohan-e",
       "name": "Kiran Mohan E",
-      "email": null,
+      "email": "kiran.mohan.e@nokia.com",
       "jiraAssignee": "Kiran Mohan E",
       "employmentType": "Nokia",
       "role": "specialist",
@@ -202,7 +235,10 @@
       "orgUnit": "Deepalaxmi Hegde K Team",
       "location": "IN/Bangalore/Manyata E2",
       "workMode": "unspecified",
-      "managerId": "deepalaxmi-hegde-k"
+      "managerId": "deepalaxmi-hegde-k",
+      "aliases": [
+        "Kiran Mohan E"
+      ]
     },
     {
       "id": "krishnama-bala-srinivas-prabhu",
@@ -220,7 +256,7 @@
     {
       "id": "mohammed-mizfar-n",
       "name": "Mohammed Mizfar N",
-      "email": null,
+      "email": "mohammed.mizfar.n@nokia.com",
       "jiraAssignee": "Mohammed Mizfar N",
       "employmentType": "Nokia",
       "role": "engineer",
@@ -228,12 +264,15 @@
       "orgUnit": "Deepalaxmi Hegde K Team",
       "location": "IN/Bangalore/Manyata E2",
       "workMode": "remote",
-      "managerId": "deepalaxmi-hegde-k"
+      "managerId": "deepalaxmi-hegde-k",
+      "aliases": [
+        "Mohammed Mizfar N"
+      ]
     },
     {
       "id": "naveen-uppaluru",
       "name": "Naveen Uppaluru",
-      "email": null,
+      "email": "naveen.uppaluru@nokia.com",
       "jiraAssignee": "Naveen Uppaluru",
       "employmentType": "EXT-Nokia",
       "role": "contractor",
@@ -241,12 +280,15 @@
       "orgUnit": "Deepalaxmi Hegde K Team",
       "location": "IN/Bangalore/Manyata E2",
       "workMode": "unspecified",
-      "managerId": "deepalaxmi-hegde-k"
+      "managerId": "deepalaxmi-hegde-k",
+      "aliases": [
+        "Naveen Uppaluru"
+      ]
     },
     {
       "id": "nidhi-balachandra-bhat",
       "name": "Nidhi Balachandra Bhat",
-      "email": null,
+      "email": "nidhi.balachandra.bhat@nokia.com",
       "jiraAssignee": "Nidhi Balachandra Bhat",
       "employmentType": "Nokia",
       "role": "engineer",
@@ -254,12 +296,15 @@
       "orgUnit": "Deepalaxmi Hegde K Team",
       "location": "IN/Bangalore/Manyata E2",
       "workMode": "unspecified",
-      "managerId": "deepalaxmi-hegde-k"
+      "managerId": "deepalaxmi-hegde-k",
+      "aliases": [
+        "Nidhi Balachandra Bhat"
+      ]
     },
     {
       "id": "prabhulinga-prabhulinga",
       "name": "Prabhulinga Prabhulinga",
-      "email": null,
+      "email": "prabhulinga.prabhulinga@nokia.com",
       "jiraAssignee": "Prabhulinga Prabhulinga",
       "employmentType": "Nokia",
       "role": "specialist",
@@ -267,13 +312,20 @@
       "orgUnit": "Deepalaxmi Hegde K Team",
       "location": "IN/Bangalore/Manyata E2",
       "workMode": "unspecified",
-      "managerId": "deepalaxmi-hegde-k"
+      "managerId": "deepalaxmi-hegde-k",
+      "aliases": [
+        "Prabhulinga Prabhulinga"
+      ]
     },
     {
       "id": "pramod-haviruth",
       "name": "Pramod Haviruth",
-      "email": null,
+      "email": "pramod.haviruth@nokia.com",
       "jiraAssignee": "Pramod Haviruth",
+      "aliases": [
+        "pramod.haviruth",
+        "Pramod Haviruth"
+      ],
       "employmentType": "Nokia",
       "role": "specialist",
       "title": "Senior Technical Specialist",
@@ -285,7 +337,7 @@
     {
       "id": "priya-s-m",
       "name": "Priya S M",
-      "email": null,
+      "email": "priya.s.m@nokia.com",
       "jiraAssignee": "Priya S M",
       "employmentType": "Nokia",
       "role": "specialist",
@@ -293,12 +345,15 @@
       "orgUnit": "Deepalaxmi Hegde K Team",
       "location": "IN/Bangalore/Manyata E2",
       "workMode": "unspecified",
-      "managerId": "deepalaxmi-hegde-k"
+      "managerId": "deepalaxmi-hegde-k",
+      "aliases": [
+        "Priya S M"
+      ]
     },
     {
       "id": "priyanka-1-s",
       "name": "Priyanka 1. S",
-      "email": null,
+      "email": "priyanka.1.s@nokia.com",
       "jiraAssignee": "Priyanka 1. S",
       "employmentType": "EXT-Nokia",
       "role": "contractor",
@@ -306,12 +361,15 @@
       "orgUnit": "Deepalaxmi Hegde K Team",
       "location": "IN/Bangalore/Manyata E2",
       "workMode": "unspecified",
-      "managerId": "deepalaxmi-hegde-k"
+      "managerId": "deepalaxmi-hegde-k",
+      "aliases": [
+        "Priyanka 1. S"
+      ]
     },
     {
       "id": "puneeth-g-l",
       "name": "Puneeth G L",
-      "email": null,
+      "email": "puneeth.g.l@nokia.com",
       "jiraAssignee": "Puneeth G L",
       "employmentType": "Nokia",
       "role": "associate",
@@ -319,12 +377,15 @@
       "orgUnit": "Deepalaxmi Hegde K Team",
       "location": "IN/Bangalore/Manyata E2",
       "workMode": "unspecified",
-      "managerId": "deepalaxmi-hegde-k"
+      "managerId": "deepalaxmi-hegde-k",
+      "aliases": [
+        "Puneeth G L"
+      ]
     },
     {
       "id": "radhika-h",
       "name": "Radhika H",
-      "email": null,
+      "email": "radhika.h@nokia.com",
       "jiraAssignee": "Radhika H",
       "employmentType": "EXT-Nokia",
       "role": "contractor",
@@ -332,12 +393,15 @@
       "orgUnit": "Deepalaxmi Hegde K Team",
       "location": "IN/Bangalore/Manyata E2",
       "workMode": "unspecified",
-      "managerId": "deepalaxmi-hegde-k"
+      "managerId": "deepalaxmi-hegde-k",
+      "aliases": [
+        "Radhika H"
+      ]
     },
     {
       "id": "rajneesh-yadav",
       "name": "Rajneesh Yadav",
-      "email": null,
+      "email": "rajneesh.yadav@nokia.com",
       "jiraAssignee": "Rajneesh Yadav",
       "employmentType": "Nokia",
       "role": "engineer",
@@ -345,12 +409,15 @@
       "orgUnit": "Deepalaxmi Hegde K Team",
       "location": "IN/Bangalore/Manyata E2",
       "workMode": "unspecified",
-      "managerId": "deepalaxmi-hegde-k"
+      "managerId": "deepalaxmi-hegde-k",
+      "aliases": [
+        "Rajneesh Yadav"
+      ]
     },
     {
       "id": "ravi-prasad",
       "name": "Ravi Prasad",
-      "email": null,
+      "email": "ravi.prasad@nokia.com",
       "jiraAssignee": "Ravi Prasad",
       "employmentType": "Nokia",
       "role": "specialist",
@@ -358,12 +425,15 @@
       "orgUnit": "Deepalaxmi Hegde K Team",
       "location": "IN/Bangalore/Manyata E2",
       "workMode": "unspecified",
-      "managerId": "deepalaxmi-hegde-k"
+      "managerId": "deepalaxmi-hegde-k",
+      "aliases": [
+        "Ravi Prasad"
+      ]
     },
     {
       "id": "richi-mathur",
       "name": "Richi Mathur",
-      "email": null,
+      "email": "richi.mathur@nokia.com",
       "jiraAssignee": "Richi Mathur",
       "employmentType": "Nokia",
       "role": "specialist",
@@ -371,12 +441,15 @@
       "orgUnit": "Deepalaxmi Hegde K Team",
       "location": "IN/Bangalore/Manyata E2",
       "workMode": "unspecified",
-      "managerId": "deepalaxmi-hegde-k"
+      "managerId": "deepalaxmi-hegde-k",
+      "aliases": [
+        "Richi Mathur"
+      ]
     },
     {
       "id": "s-komathy",
       "name": "S Komathy",
-      "email": null,
+      "email": "s.komathy@nokia.com",
       "jiraAssignee": "S Komathy",
       "employmentType": "Nokia",
       "role": "specialist",
@@ -384,12 +457,15 @@
       "orgUnit": "Deepalaxmi Hegde K Team",
       "location": "IN/Bangalore/Manyata E2",
       "workMode": "unspecified",
-      "managerId": "deepalaxmi-hegde-k"
+      "managerId": "deepalaxmi-hegde-k",
+      "aliases": [
+        "S Komathy"
+      ]
     },
     {
       "id": "sainath-nair",
       "name": "Sainath Nair",
-      "email": null,
+      "email": "sainath.nair@nokia.com",
       "jiraAssignee": "Sainath Nair",
       "employmentType": "Nokia",
       "role": "specialist",
@@ -397,12 +473,15 @@
       "orgUnit": "Deepalaxmi Hegde K Team",
       "location": "IN/Bangalore/Manyata E2",
       "workMode": "unspecified",
-      "managerId": "deepalaxmi-hegde-k"
+      "managerId": "deepalaxmi-hegde-k",
+      "aliases": [
+        "Sainath Nair"
+      ]
     },
     {
       "id": "shreyash-sahu",
       "name": "Shreyash Sahu",
-      "email": null,
+      "email": "shreyash.sahu@nokia.com",
       "jiraAssignee": "Shreyash Sahu",
       "employmentType": "EXT-Nokia",
       "role": "contractor",
@@ -410,12 +489,15 @@
       "orgUnit": "Deepalaxmi Hegde K Team",
       "location": "IN/Bangalore/Manyata E2",
       "workMode": "unspecified",
-      "managerId": "deepalaxmi-hegde-k"
+      "managerId": "deepalaxmi-hegde-k",
+      "aliases": [
+        "Shreyash Sahu"
+      ]
     },
     {
       "id": "sindhu-murugesan",
       "name": "Sindhu Murugesan",
-      "email": null,
+      "email": "sindhu.murugesan@nokia.com",
       "jiraAssignee": "Sindhu Murugesan",
       "employmentType": "EXT-Nokia",
       "role": "contractor",
@@ -423,12 +505,15 @@
       "orgUnit": "Deepalaxmi Hegde K Team",
       "location": "IN/Bangalore/Manyata E2",
       "workMode": "unspecified",
-      "managerId": "deepalaxmi-hegde-k"
+      "managerId": "deepalaxmi-hegde-k",
+      "aliases": [
+        "Sindhu Murugesan"
+      ]
     },
     {
       "id": "sneha-2-sneha",
       "name": "Sneha 2. Sneha",
-      "email": null,
+      "email": "sneha.2.sneha@nokia.com",
       "jiraAssignee": "Sneha 2. Sneha",
       "employmentType": "EXT-Nokia",
       "role": "contractor",
@@ -436,12 +521,15 @@
       "orgUnit": "Deepalaxmi Hegde K Team",
       "location": "IN/Bangalore/Manyata E2",
       "workMode": "unspecified",
-      "managerId": "deepalaxmi-hegde-k"
+      "managerId": "deepalaxmi-hegde-k",
+      "aliases": [
+        "Sneha 2. Sneha"
+      ]
     },
     {
       "id": "stefano-mauri",
       "name": "Stefano Mauri",
-      "email": null,
+      "email": "stefano.mauri@nokia.com",
       "jiraAssignee": "Stefano Mauri",
       "employmentType": "Nokia",
       "role": "specialist",
@@ -449,7 +537,10 @@
       "orgUnit": "Deepalaxmi Hegde K Team",
       "location": "IT/Vimercate/Antonio Meucci",
       "workMode": "unspecified",
-      "managerId": "deepalaxmi-hegde-k"
+      "managerId": "deepalaxmi-hegde-k",
+      "aliases": [
+        "Stefano Mauri"
+      ]
     },
     {
       "id": "tejraj-choudhary",
@@ -467,7 +558,7 @@
     {
       "id": "vagish-gupta",
       "name": "Vagish Gupta",
-      "email": null,
+      "email": "vagish.gupta@nokia.com",
       "jiraAssignee": "Vagish Gupta",
       "employmentType": "EXT-Nokia",
       "role": "contractor",
@@ -475,7 +566,10 @@
       "orgUnit": "Deepalaxmi Hegde K Team",
       "location": "IN/Bangalore/Manyata E2",
       "workMode": "unspecified",
-      "managerId": "deepalaxmi-hegde-k"
+      "managerId": "deepalaxmi-hegde-k",
+      "aliases": [
+        "Vagish Gupta"
+      ]
     },
     {
       "id": "yasaswini-vissa",
@@ -492,4 +586,3 @@
     }
   ]
 }
-

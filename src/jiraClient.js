@@ -223,9 +223,17 @@ async function queryJira(config, queryOptions = {}) {
     basic: { name: "basic", value: `Basic ${basicAuthHeader}` },
     bearer: { name: "bearer", value: `Bearer ${config.apiToken}` }
   };
-  const authSchemes = (Array.isArray(config.authModes) ? config.authModes : ["basic"])
-    .map((mode) => allSchemes[String(mode).toLowerCase()])
+  // Ensure Basic auth is always tried first for Jira API tokens (Bearer is for OAuth)
+  const configModes = (Array.isArray(config.authModes) ? config.authModes : ["basic"])
+    .map((m) => String(m).toLowerCase())
     .filter(Boolean);
+  const basicFirst = configModes.includes("basic")
+    ? ["basic", ...configModes.filter((m) => m !== "basic")]
+    : configModes;
+  const authSchemes = basicFirst
+    .map((mode) => allSchemes[mode])
+    .filter(Boolean);
+  
   const params = new URLSearchParams({
     jql: queryOptions.jql || config.jql,
     maxResults: String(queryOptions.maxResults || config.maxResults),
@@ -237,6 +245,7 @@ async function queryJira(config, queryOptions = {}) {
 
   const searchPaths = ["/rest/api/3/search", "/rest/api/2/search"];
   let lastError = null;
+  const results = [];
 
   for (const searchPath of searchPaths) {
     for (const auth of authSchemes) {
@@ -258,18 +267,30 @@ async function queryJira(config, queryOptions = {}) {
           ? data.issues.map((issue) => normalizeIssue(issue, config.baseUrl))
           : [];
 
-        return {
+        results.push({
           configured: true,
           issues,
           total: Number(data.total || issues.length),
           startAt: Number(data.startAt || queryOptions.startAt || 0),
           maxResults: Number(data.maxResults || queryOptions.maxResults || config.maxResults),
-          authScheme: auth.name
-        };
+          authScheme: auth.name,
+          _inner: true
+        });
       } catch (error) {
         lastError = error;
       }
     }
+  }
+
+  // Return the result with the most issues, preferring Basic auth on tie
+  if (results.length > 0) {
+    results.sort((a, b) => {
+      const aCount = (a.issues || []).length;
+      const bCount = (b.issues || []).length;
+      if (aCount !== bCount) return bCount - aCount;
+      return a.authScheme === "basic" ? -1 : 1;
+    });
+    return results[0];
   }
 
   throw lastError || new Error("Unable to fetch Jira issues");

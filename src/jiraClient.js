@@ -77,13 +77,18 @@ function normalizeIssue(issue, baseUrl) {
   browseUrl.pathname = `/browse/${issue.key}`;
   browseUrl.search = "";
 
+  const assignee = issue.fields?.assignee || null;
+
   return {
     key: issue.key,
     summary: issue.fields?.summary || "(No summary)",
     status: issue.fields?.status?.name || "Unknown",
     issueType: issue.fields?.issuetype?.name || "Task",
     priority: issue.fields?.priority?.name || "-",
-    assignee: issue.fields?.assignee?.displayName || "Unassigned",
+    assignee: assignee?.displayName || assignee?.name || assignee?.emailAddress || "Unassigned",
+    assigneeName: assignee?.displayName || assignee?.name || "",
+    assigneeEmail: assignee?.emailAddress || "",
+    assigneeAccountId: assignee?.accountId || "",
     created: issue.fields?.created || "",
     updated: issue.fields?.updated || "",
     dueDate: issue.fields?.duedate || "",
@@ -157,11 +162,20 @@ function filterIssuesByAssignees(issues, assignees) {
   });
 
   return issues.filter((issue) => {
-    const assigneeKey = normalizeAssigneeKey(issue && issue.assignee ? issue.assignee : "");
-    if (!assigneeKey) return false;
-    if (exact.has(assigneeKey)) return true;
-    const local = assigneeLocalPart(assigneeKey);
-    return local ? localParts.has(local) : false;
+    const candidates = [
+      issue?.assignee,
+      issue?.assigneeName,
+      issue?.assigneeEmail,
+      issue?.assigneeAccountId
+    ];
+
+    return candidates.some((raw) => {
+      const assigneeKey = normalizeAssigneeKey(raw);
+      if (!assigneeKey) return false;
+      if (exact.has(assigneeKey)) return true;
+      const local = assigneeLocalPart(assigneeKey);
+      return local ? localParts.has(local) : false;
+    });
   });
 }
 
@@ -266,16 +280,25 @@ async function fetchJiraIssues(options = {}) {
   if (assignees.length > 0 && payload && payload.configured) {
     const allowedStatuses = parseAllowedStatuses(config.personalAllowedStatuses);
     const allowedTypes = parseAllowedStatuses(config.personalAllowedTypes);
-    let filteredIssues = filterIssuesByAllowedStatuses(payload.issues, allowedStatuses);
-    filteredIssues = filterIssuesByAllowedTypes(filteredIssues, allowedTypes);
+    let allowedIssues = filterIssuesByAllowedStatuses(payload.issues, allowedStatuses);
+    allowedIssues = filterIssuesByAllowedTypes(allowedIssues, allowedTypes);
+
+    let filteredIssues = allowedIssues;
     if (usedScopedFallback) {
       filteredIssues = filterIssuesByAssignees(filteredIssues, assignees);
     }
+
+    const scopeFallbackUnfiltered = usedScopedFallback && filteredIssues.length === 0 && allowedIssues.length > 0;
+    if (scopeFallbackUnfiltered) {
+      filteredIssues = allowedIssues;
+    }
+
     return {
       ...payload,
       issues: filteredIssues,
       total: filteredIssues.length,
-      scopeFallback: usedScopedFallback
+      scopeFallback: usedScopedFallback,
+      scopeFallbackUnfiltered
     };
   }
 
@@ -636,11 +659,26 @@ async function fetchTeamSummary(options = {}) {
 
   const pageSize = Math.max(50, Math.min(200, Number(options.maxResults || config.teamMaxResults || 100)));
 
-  const payload = await queryJira(config, {
-    jql: teamJql,
-    maxResults: pageSize,
-    startAt: 0
-  });
+  let payload;
+  let usedScopedFallback = false;
+  try {
+    payload = await queryJira(config, {
+      jql: teamJql,
+      maxResults: pageSize,
+      startAt: 0
+    });
+  } catch (error) {
+    if (!assignees.length || !/status\s+400/i.test(String(error && error.message ? error.message : ""))) {
+      throw error;
+    }
+
+    payload = await queryJira(config, {
+      jql: config.teamJql,
+      maxResults: pageSize,
+      startAt: 0
+    });
+    usedScopedFallback = true;
+  }
 
   if (!payload.configured) {
     return payload;
@@ -654,7 +692,7 @@ async function fetchTeamSummary(options = {}) {
     let guard = 0;
     while (startAt < total && guard < 50) {
       const page = await queryJira(config, {
-        jql: teamJql,
+        jql: usedScopedFallback ? config.teamJql : teamJql,
         maxResults: pageSize,
         startAt
       });
@@ -672,6 +710,11 @@ async function fetchTeamSummary(options = {}) {
     if (key && !uniq.has(key)) uniq.set(key, issue);
   });
   allIssues = Array.from(uniq.values());
+
+  if (usedScopedFallback && assignees.length > 0) {
+    allIssues = filterIssuesByAssignees(allIssues, assignees);
+  }
+
   const activeIssues = allIssues.filter((issue) => isAllowedTeamStatus(issue?.status));
 
   const summary = computeTeamSummary(allIssues, assigneeRoster);
@@ -690,7 +733,8 @@ async function fetchTeamSummary(options = {}) {
     summary,
     total: allIssues.length,
     activeTotal: activeIssues.length,
-    scopedAssignees: assignees.length
+    scopedAssignees: assignees.length,
+    scopeFallback: usedScopedFallback
   };
 }
 

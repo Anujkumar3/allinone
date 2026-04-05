@@ -257,6 +257,7 @@ async function fetchJiraIssues(options = {}) {
 
   let payload;
   let usedScopedFallback = false;
+  let usedTeamFallback = false;
 
   try {
     payload = await queryJira(config, {
@@ -277,6 +278,15 @@ async function fetchJiraIssues(options = {}) {
     usedScopedFallback = true;
   }
 
+  if (assignees.length > 0 && payload && payload.configured && Array.isArray(payload.issues) && payload.issues.length === 0) {
+    // Some Jira setups return 0 for personal JQL under service auth. Use team JQL and filter locally.
+    payload = await queryJira(config, {
+      jql: config.teamJql,
+      maxResults: Number(options.maxResults || config.maxResults)
+    });
+    usedTeamFallback = true;
+  }
+
   if (assignees.length > 0 && payload && payload.configured) {
     const allowedStatuses = parseAllowedStatuses(config.personalAllowedStatuses);
     const allowedTypes = parseAllowedStatuses(config.personalAllowedTypes);
@@ -293,6 +303,10 @@ async function fetchJiraIssues(options = {}) {
       filteredIssues = filterIssuesByAssignees(filteredIssues, assignees);
     }
 
+    if (usedTeamFallback) {
+      filteredIssues = filterIssuesByAssignees(filteredIssues, assignees);
+    }
+
     const scopeFallbackUnfiltered = usedScopedFallback && filteredIssues.length === 0 && allowedIssues.length > 0;
     if (scopeFallbackUnfiltered) {
       filteredIssues = allowedIssues;
@@ -304,7 +318,8 @@ async function fetchJiraIssues(options = {}) {
       total: filteredIssues.length,
       scopeFallback: usedScopedFallback,
       scopeFallbackUnfiltered,
-      allowedFilterFallback
+      allowedFilterFallback,
+      teamFallback: usedTeamFallback
     };
   }
 

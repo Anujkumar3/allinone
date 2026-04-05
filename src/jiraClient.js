@@ -18,6 +18,19 @@ function getJiraConfig() {
   };
 }
 
+function parseAssigneeMap() {
+  const mapStr = String(process.env.JIRA_PERSONAL_ASSIGNEE_MAP || "").trim();
+  const mapObj = {};
+  if (!mapStr) return mapObj;
+  mapStr.split(";").forEach((pair) => {
+    const [email, jiraKey] = pair.split(":").map((s) => String(s).trim());
+    if (email && jiraKey) {
+      mapObj[email.toLowerCase()] = jiraKey;
+    }
+  });
+  return mapObj;
+}
+
 function escapeJqlValue(value) {
   return String(value).replace(/\\/g, "\\\\").replace(/"/g, "\\\"");
 }
@@ -151,9 +164,12 @@ function filterIssuesByAssignees(issues, assignees) {
   if (!Array.isArray(issues) || !issues.length) return [];
   if (!Array.isArray(assignees) || !assignees.length) return issues;
 
+  const assigneeMap = parseAssigneeMap();
+  const mappedAssignees = assignees.map((a) => assigneeMap[String(a).toLowerCase()] || a);
+
   const exact = new Set();
   const localParts = new Set();
-  assignees.forEach((value) => {
+  mappedAssignees.forEach((value) => {
     const key = normalizeAssigneeKey(value);
     if (!key) return;
     exact.add(key);

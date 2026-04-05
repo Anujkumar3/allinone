@@ -494,7 +494,21 @@ const server = http.createServer((req, res) => {
       const context = resolveUserContext(hierarchy.employees, email);
       const user = context && context.user ? context.user : null;
       const emailLocal = email.includes("@") ? email.split("@")[0] : email;
+      
+      // Check for optional assignee map override
+      const assigneeMapStr = String(process.env.JIRA_PERSONAL_ASSIGNEE_MAP || "").trim();
+      let overrideAssignee = null;
+      if (assigneeMapStr) {
+        assigneeMapStr.split(";").forEach((pair) => {
+          const [mapEmail, mapKey] = pair.split(":").map((s) => String(s).trim());
+          if (mapEmail.toLowerCase() === email && mapKey) {
+            overrideAssignee = mapKey;
+          }
+        });
+      }
+      
       const candidates = [
+        overrideAssignee,
         user && user.jiraAssignee,
         user && user.email,
         user && user.id,

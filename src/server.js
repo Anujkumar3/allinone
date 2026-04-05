@@ -513,6 +513,7 @@ const server = http.createServer((req, res) => {
         user && user.name,
         user && user.email,
         user && user.id,
+        ...(Array.isArray(user && user.aliases) ? user.aliases : []),
         email,
         emailLocal
       ].filter((value, idx, arr) => value && arr.indexOf(value) === idx);

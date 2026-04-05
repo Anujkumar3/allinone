@@ -112,6 +112,12 @@
       "name": "Deepak 2. N",
       "email": "deepak.n@nokia.com",
       "jiraAssignee": "deepak.n@nokia.com",
+      "aliases": [
+        "deepak.2.n@nokia.com",
+        "deepak.2.n",
+        "deepak.n",
+        "Deepak N"
+      ],
       "employmentType": "Nokia",
       "role": "associate",
       "title": "Associate",
@@ -486,3 +492,4 @@
     }
   ]
 }
+

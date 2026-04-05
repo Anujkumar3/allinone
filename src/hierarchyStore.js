@@ -187,6 +187,7 @@ function resolveUserContext(employees, email) {
       name: user.name,
       email: user.email,
       jiraAssignee: user.jiraAssignee || user.email || user.id,
+      aliases: Array.isArray(user.aliases) ? user.aliases : [],
       role: user.role || "employee",
       level: user.level || null,
       title: user.title || null,

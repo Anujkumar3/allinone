@@ -1,0 +1,1768 @@
+{
+  "notifications": [
+    {
+      "id": "mnfvyo47vtpo9",
+      "userEmail": "anuj.kumar@nokia.com",
+      "type": "rollup",
+      "title": "Your summary was included in the team roll-up",
+      "message": "Deepalaxmi Hegde K generated the team roll-up for week of 2026-03-30. Your weekly summary was included.",
+      "createdAt": "2026-04-01T10:11:22.134Z",
+      "readAt": "2026-04-01T10:13:05.858Z"
+    },
+    {
+      "id": "mnfvyo470vruy",
+      "userEmail": "deepak.n@nokia.com",
+      "type": "rollup-missing",
+      "title": "Team roll-up generated — no submission from you",
+      "message": "Deepalaxmi Hegde K generated the team roll-up for week of 2026-03-30. You had no weekly summary submitted for this week.",
+      "createdAt": "2026-04-01T10:11:22.134Z",
+      "readAt": null
+    },
+    {
+      "id": "mnfvyo47orvly",
+      "userEmail": "krishnama_bala.srinivas_prabhu@nokia.com",
+      "type": "rollup-missing",
+      "title": "Team roll-up generated — no submission from you",
+      "message": "Deepalaxmi Hegde K generated the team roll-up for week of 2026-03-30. You had no weekly summary submitted for this week.",
+      "createdAt": "2026-04-01T10:11:22.134Z",
+      "readAt": null
+    },
+    {
+      "id": "mnfvyo47ll8cj",
+      "userEmail": "tejraj.choudhary@nokia.com",
+      "type": "rollup-missing",
+      "title": "Team roll-up generated — no submission from you",
+      "message": "Deepalaxmi Hegde K generated the team roll-up for week of 2026-03-30. You had no weekly summary submitted for this week.",
+      "createdAt": "2026-04-01T10:11:22.134Z",
+      "readAt": "2026-04-01T10:34:25.725Z"
+    },
+    {
+      "id": "mnfvyo47f1q7b",
+      "userEmail": "yasaswini.vissa@nokia.com",
+      "type": "rollup-missing",
+      "title": "Team roll-up generated — no submission from you",
+      "message": "Deepalaxmi Hegde K generated the team roll-up for week of 2026-03-30. You had no weekly summary submitted for this week.",
+      "createdAt": "2026-04-01T10:11:22.134Z",
+      "readAt": null
+    },
+    {
+      "id": "mnfw0qi2w6f9x",
+      "userEmail": "anuj.kumar@nokia.com",
+      "type": "rollup",
+      "title": "Your summary was included in the team roll-up",
+      "message": "Deepalaxmi Hegde K generated the team roll-up for week of 2026-03-30. Your weekly summary was included.",
+      "createdAt": "2026-04-01T10:12:58.538Z",
+      "readAt": "2026-04-01T10:13:05.858Z"
+    },
+    {
+      "id": "mnfw0qi2sh46p",
+      "userEmail": "deepak.n@nokia.com",
+      "type": "rollup-missing",
+      "title": "Team roll-up generated — no submission from you",
+      "message": "Deepalaxmi Hegde K generated the team roll-up for week of 2026-03-30. You had no weekly summary submitted for this week.",
+      "createdAt": "2026-04-01T10:12:58.538Z",
+      "readAt": null
+    },
+    {
+      "id": "mnfw0qi21l0hd",
+      "userEmail": "krishnama_bala.srinivas_prabhu@nokia.com",
+      "type": "rollup-missing",
+      "title": "Team roll-up generated — no submission from you",
+      "message": "Deepalaxmi Hegde K generated the team roll-up for week of 2026-03-30. You had no weekly summary submitted for this week.",
+      "createdAt": "2026-04-01T10:12:58.538Z",
+      "readAt": null
+    },
+    {
+      "id": "mnfw0qi2pi718",
+      "userEmail": "tejraj.choudhary@nokia.com",
+      "type": "rollup-missing",
+      "title": "Team roll-up generated — no submission from you",
+      "message": "Deepalaxmi Hegde K generated the team roll-up for week of 2026-03-30. You had no weekly summary submitted for this week.",
+      "createdAt": "2026-04-01T10:12:58.538Z",
+      "readAt": "2026-04-01T10:34:25.725Z"
+    },
+    {
+      "id": "mnfw0qi2i5dyq",
+      "userEmail": "yasaswini.vissa@nokia.com",
+      "type": "rollup-missing",
+      "title": "Team roll-up generated — no submission from you",
+      "message": "Deepalaxmi Hegde K generated the team roll-up for week of 2026-03-30. You had no weekly summary submitted for this week.",
+      "createdAt": "2026-04-01T10:12:58.538Z",
+      "readAt": null
+    },
+    {
+      "id": "mnfw4rtnpyba0",
+      "userEmail": "anuj.kumar@nokia.com",
+      "type": "rollup",
+      "title": "Your summary was included in the team roll-up",
+      "message": "Deepalaxmi Hegde K generated the team roll-up for week of 2026-03-30. Your weekly summary was included.",
+      "createdAt": "2026-04-01T10:16:06.875Z",
+      "readAt": "2026-04-01T10:16:17.725Z"
+    },
+    {
+      "id": "mnfw4rtn5auck",
+      "userEmail": "deepak.n@nokia.com",
+      "type": "rollup-missing",
+      "title": "Team roll-up generated — no submission from you",
+      "message": "Deepalaxmi Hegde K generated the team roll-up for week of 2026-03-30. You had no weekly summary submitted for this week.",
+      "createdAt": "2026-04-01T10:16:06.875Z",
+      "readAt": null
+    },
+    {
+      "id": "mnfw4rtn019x6",
+      "userEmail": "krishnama_bala.srinivas_prabhu@nokia.com",
+      "type": "rollup-missing",
+      "title": "Team roll-up generated — no submission from you",
+      "message": "Deepalaxmi Hegde K generated the team roll-up for week of 2026-03-30. You had no weekly summary submitted for this week.",
+      "createdAt": "2026-04-01T10:16:06.875Z",
+      "readAt": null
+    },
+    {
+      "id": "mnfw4rtn59h96",
+      "userEmail": "tejraj.choudhary@nokia.com",
+      "type": "rollup-missing",
+      "title": "Team roll-up generated — no submission from you",
+      "message": "Deepalaxmi Hegde K generated the team roll-up for week of 2026-03-30. You had no weekly summary submitted for this week.",
+      "createdAt": "2026-04-01T10:16:06.875Z",
+      "readAt": "2026-04-01T10:34:25.725Z"
+    },
+    {
+      "id": "mnfw4rtnxqevw",
+      "userEmail": "yasaswini.vissa@nokia.com",
+      "type": "rollup-missing",
+      "title": "Team roll-up generated — no submission from you",
+      "message": "Deepalaxmi Hegde K generated the team roll-up for week of 2026-03-30. You had no weekly summary submitted for this week.",
+      "createdAt": "2026-04-01T10:16:06.875Z",
+      "readAt": null
+    },
+    {
+      "id": "mnfwckukvgrcu",
+      "userEmail": "anuj.kumar@nokia.com",
+      "type": "rollup",
+      "title": "Your summary was included in the team roll-up",
+      "message": "Deepalaxmi Hegde K generated the team roll-up for week of 2026-03-30. Your weekly summary was included.",
+      "createdAt": "2026-04-01T10:22:11.084Z",
+      "readAt": "2026-04-01T10:26:00.262Z"
+    },
+    {
+      "id": "mnfwckuk4a6c5",
+      "userEmail": "deepak.n@nokia.com",
+      "type": "rollup-missing",
+      "title": "Team roll-up generated — no submission from you",
+      "message": "Deepalaxmi Hegde K generated the team roll-up for week of 2026-03-30. You had no weekly summary submitted for this week.",
+      "createdAt": "2026-04-01T10:22:11.084Z",
+      "readAt": null
+    },
+    {
+      "id": "mnfwckukza9zn",
+      "userEmail": "krishnama_bala.srinivas_prabhu@nokia.com",
+      "type": "rollup-missing",
+      "title": "Team roll-up generated — no submission from you",
+      "message": "Deepalaxmi Hegde K generated the team roll-up for week of 2026-03-30. You had no weekly summary submitted for this week.",
+      "createdAt": "2026-04-01T10:22:11.084Z",
+      "readAt": null
+    },
+    {
+      "id": "mnfwckukaqun0",
+      "userEmail": "tejraj.choudhary@nokia.com",
+      "type": "rollup-missing",
+      "title": "Team roll-up generated — no submission from you",
+      "message": "Deepalaxmi Hegde K generated the team roll-up for week of 2026-03-30. You had no weekly summary submitted for this week.",
+      "createdAt": "2026-04-01T10:22:11.084Z",
+      "readAt": "2026-04-01T10:34:25.725Z"
+    },
+    {
+      "id": "mnfwckukcpbzh",
+      "userEmail": "yasaswini.vissa@nokia.com",
+      "type": "rollup-missing",
+      "title": "Team roll-up generated — no submission from you",
+      "message": "Deepalaxmi Hegde K generated the team roll-up for week of 2026-03-30. You had no weekly summary submitted for this week.",
+      "createdAt": "2026-04-01T10:22:11.084Z",
+      "readAt": null
+    },
+    {
+      "id": "mnfweytolzvnm",
+      "userEmail": "anuj.kumar@nokia.com",
+      "type": "rollup",
+      "title": "Your summary was included in the team roll-up",
+      "message": "Deepalaxmi Hegde K generated the team roll-up for week of 2026-03-30. Your weekly summary was included.",
+      "createdAt": "2026-04-01T10:24:02.508Z",
+      "readAt": "2026-04-01T10:26:00.262Z"
+    },
+    {
+      "id": "mnfweytox5rhz",
+      "userEmail": "deepak.n@nokia.com",
+      "type": "rollup-missing",
+      "title": "Team roll-up generated — no submission from you",
+      "message": "Deepalaxmi Hegde K generated the team roll-up for week of 2026-03-30. You had no weekly summary submitted for this week.",
+      "createdAt": "2026-04-01T10:24:02.508Z",
+      "readAt": null
+    },
+    {
+      "id": "mnfweytofs02o",
+      "userEmail": "krishnama_bala.srinivas_prabhu@nokia.com",
+      "type": "rollup-missing",
+      "title": "Team roll-up generated — no submission from you",
+      "message": "Deepalaxmi Hegde K generated the team roll-up for week of 2026-03-30. You had no weekly summary submitted for this week.",
+      "createdAt": "2026-04-01T10:24:02.508Z",
+      "readAt": null
+    },
+    {
+      "id": "mnfweytouafvs",
+      "userEmail": "tejraj.choudhary@nokia.com",
+      "type": "rollup-missing",
+      "title": "Team roll-up generated — no submission from you",
+      "message": "Deepalaxmi Hegde K generated the team roll-up for week of 2026-03-30. You had no weekly summary submitted for this week.",
+      "createdAt": "2026-04-01T10:24:02.508Z",
+      "readAt": "2026-04-01T10:34:25.725Z"
+    },
+    {
+      "id": "mnfweytosm3a7",
+      "userEmail": "yasaswini.vissa@nokia.com",
+      "type": "rollup-missing",
+      "title": "Team roll-up generated — no submission from you",
+      "message": "Deepalaxmi Hegde K generated the team roll-up for week of 2026-03-30. You had no weekly summary submitted for this week.",
+      "createdAt": "2026-04-01T10:24:02.508Z",
+      "readAt": null
+    },
+    {
+      "id": "mnfwhc2265gl5",
+      "userEmail": "anuj.kumar@nokia.com",
+      "type": "rollup",
+      "title": "Your summary was included in the team roll-up",
+      "message": "Deepalaxmi Hegde K generated the team roll-up for week of 2026-03-30. Your weekly summary was included.",
+      "createdAt": "2026-04-01T10:25:52.970Z",
+      "readAt": "2026-04-01T10:26:00.262Z"
+    },
+    {
+      "id": "mnfwhc229szep",
+      "userEmail": "deepak.n@nokia.com",
+      "type": "rollup-missing",
+      "title": "Team roll-up generated — no submission from you",
+      "message": "Deepalaxmi Hegde K generated the team roll-up for week of 2026-03-30. You had no weekly summary submitted for this week.",
+      "createdAt": "2026-04-01T10:25:52.970Z",
+      "readAt": null
+    },
+    {
+      "id": "mnfwhc22fdp6k",
+      "userEmail": "krishnama_bala.srinivas_prabhu@nokia.com",
+      "type": "rollup-missing",
+      "title": "Team roll-up generated — no submission from you",
+      "message": "Deepalaxmi Hegde K generated the team roll-up for week of 2026-03-30. You had no weekly summary submitted for this week.",
+      "createdAt": "2026-04-01T10:25:52.970Z",
+      "readAt": null
+    },
+    {
+      "id": "mnfwhc225hbq1",
+      "userEmail": "tejraj.choudhary@nokia.com",
+      "type": "rollup-missing",
+      "title": "Team roll-up generated — no submission from you",
+      "message": "Deepalaxmi Hegde K generated the team roll-up for week of 2026-03-30. You had no weekly summary submitted for this week.",
+      "createdAt": "2026-04-01T10:25:52.970Z",
+      "readAt": "2026-04-01T10:34:25.725Z"
+    },
+    {
+      "id": "mnfwhc22llkwk",
+      "userEmail": "yasaswini.vissa@nokia.com",
+      "type": "rollup-missing",
+      "title": "Team roll-up generated — no submission from you",
+      "message": "Deepalaxmi Hegde K generated the team roll-up for week of 2026-03-30. You had no weekly summary submitted for this week.",
+      "createdAt": "2026-04-01T10:25:52.970Z",
+      "readAt": null
+    },
+    {
+      "id": "mnfwqv1lwncft",
+      "userEmail": "anuj.kumar@nokia.com",
+      "type": "rollup",
+      "title": "Your summary was included in the team roll-up",
+      "message": "Deepalaxmi Hegde K generated the team roll-up for week of 2026-03-30. Your weekly summary was included.",
+      "createdAt": "2026-04-01T10:33:17.481Z",
+      "readAt": "2026-04-02T17:20:53.565Z"
+    },
+    {
+      "id": "mnfwqv1l4w9p4",
+      "userEmail": "deepak.2.n@nokia.com",
+      "type": "rollup",
+      "title": "Your summary was included in the team roll-up",
+      "message": "Deepalaxmi Hegde K generated the team roll-up for week of 2026-03-30. Your weekly summary was included.",
+      "createdAt": "2026-04-01T10:33:17.481Z",
+      "readAt": null
+    },
+    {
+      "id": "mnfwqv1l7fs8m",
+      "userEmail": "jayamani.t.ext@nokia.com",
+      "type": "rollup",
+      "title": "Your summary was included in the team roll-up",
+      "message": "Deepalaxmi Hegde K generated the team roll-up for week of 2026-03-30. Your weekly summary was included.",
+      "createdAt": "2026-04-01T10:33:17.481Z",
+      "readAt": "2026-04-01T10:33:44.660Z"
+    },
+    {
+      "id": "mnfwqv1lbin4y",
+      "userEmail": "krishnama_bala.srinivas_prabhu@nokia.com",
+      "type": "rollup-missing",
+      "title": "Team roll-up generated — no submission from you",
+      "message": "Deepalaxmi Hegde K generated the team roll-up for week of 2026-03-30. You had no weekly summary submitted for this week.",
+      "createdAt": "2026-04-01T10:33:17.481Z",
+      "readAt": null
+    },
+    {
+      "id": "mnfwqv1l2nrpa",
+      "userEmail": "tejraj.choudhary@nokia.com",
+      "type": "rollup-missing",
+      "title": "Team roll-up generated — no submission from you",
+      "message": "Deepalaxmi Hegde K generated the team roll-up for week of 2026-03-30. You had no weekly summary submitted for this week.",
+      "createdAt": "2026-04-01T10:33:17.481Z",
+      "readAt": "2026-04-01T10:34:25.725Z"
+    },
+    {
+      "id": "mnfwqv1lr7tcq",
+      "userEmail": "yasaswini.vissa@nokia.com",
+      "type": "rollup-missing",
+      "title": "Team roll-up generated — no submission from you",
+      "message": "Deepalaxmi Hegde K generated the team roll-up for week of 2026-03-30. You had no weekly summary submitted for this week.",
+      "createdAt": "2026-04-01T10:33:17.481Z",
+      "readAt": null
+    },
+    {
+      "id": "mnfwr6ma231en",
+      "userEmail": "anuj.kumar@nokia.com",
+      "type": "rollup",
+      "title": "Your summary was included in the team roll-up",
+      "message": "Deepalaxmi Hegde K generated the team roll-up for week of 2026-03-30. Your weekly summary was included.",
+      "createdAt": "2026-04-01T10:33:32.482Z",
+      "readAt": "2026-04-02T17:20:53.565Z"
+    },
+    {
+      "id": "mnfwr6mavlhp5",
+      "userEmail": "deepak.2.n@nokia.com",
+      "type": "rollup",
+      "title": "Your summary was included in the team roll-up",
+      "message": "Deepalaxmi Hegde K generated the team roll-up for week of 2026-03-30. Your weekly summary was included.",
+      "createdAt": "2026-04-01T10:33:32.482Z",
+      "readAt": null
+    },
+    {
+      "id": "mnfwr6maeggro",
+      "userEmail": "jayamani.t.ext@nokia.com",
+      "type": "rollup",
+      "title": "Your summary was included in the team roll-up",
+      "message": "Deepalaxmi Hegde K generated the team roll-up for week of 2026-03-30. Your weekly summary was included.",
+      "createdAt": "2026-04-01T10:33:32.482Z",
+      "readAt": "2026-04-01T10:33:44.660Z"
+    },
+    {
+      "id": "mnfwr6ma8nozk",
+      "userEmail": "krishnama_bala.srinivas_prabhu@nokia.com",
+      "type": "rollup-missing",
+      "title": "Team roll-up generated — no submission from you",
+      "message": "Deepalaxmi Hegde K generated the team roll-up for week of 2026-03-30. You had no weekly summary submitted for this week.",
+      "createdAt": "2026-04-01T10:33:32.482Z",
+      "readAt": null
+    },
+    {
+      "id": "mnfwr6magp257",
+      "userEmail": "tejraj.choudhary@nokia.com",
+      "type": "rollup-missing",
+      "title": "Team roll-up generated — no submission from you",
+      "message": "Deepalaxmi Hegde K generated the team roll-up for week of 2026-03-30. You had no weekly summary submitted for this week.",
+      "createdAt": "2026-04-01T10:33:32.482Z",
+      "readAt": "2026-04-01T10:34:25.725Z"
+    },
+    {
+      "id": "mnfwr6mayqdau",
+      "userEmail": "yasaswini.vissa@nokia.com",
+      "type": "rollup-missing",
+      "title": "Team roll-up generated — no submission from you",
+      "message": "Deepalaxmi Hegde K generated the team roll-up for week of 2026-03-30. You had no weekly summary submitted for this week.",
+      "createdAt": "2026-04-01T10:33:32.482Z",
+      "readAt": null
+    },
+    {
+      "id": "mnhq4jogdbz6x",
+      "userEmail": "anuj.kumar@nokia.com",
+      "type": "rollup",
+      "title": "Your summary was included in the team roll-up",
+      "message": "Deepalaxmi Hegde K generated the team roll-up for week of 2026-03-30. Your weekly summary was included.",
+      "createdAt": "2026-04-02T17:03:30.976Z",
+      "readAt": "2026-04-02T17:20:53.565Z"
+    },
+    {
+      "id": "mnhq4jogt8nic",
+      "userEmail": "deepak.2.n@nokia.com",
+      "type": "rollup",
+      "title": "Your summary was included in the team roll-up",
+      "message": "Deepalaxmi Hegde K generated the team roll-up for week of 2026-03-30. Your weekly summary was included.",
+      "createdAt": "2026-04-02T17:03:30.976Z",
+      "readAt": null
+    },
+    {
+      "id": "mnhq4joghinh0",
+      "userEmail": "jayamani.t.ext@nokia.com",
+      "type": "rollup",
+      "title": "Your summary was included in the team roll-up",
+      "message": "Deepalaxmi Hegde K generated the team roll-up for week of 2026-03-30. Your weekly summary was included.",
+      "createdAt": "2026-04-02T17:03:30.976Z",
+      "readAt": null
+    },
+    {
+      "id": "mnhq4jog7kami",
+      "userEmail": "krishnama_bala.srinivas_prabhu@nokia.com",
+      "type": "rollup-missing",
+      "title": "Team roll-up generated — no submission from you",
+      "message": "Deepalaxmi Hegde K generated the team roll-up for week of 2026-03-30. You had no weekly summary submitted for this week.",
+      "createdAt": "2026-04-02T17:03:30.976Z",
+      "readAt": null
+    },
+    {
+      "id": "mnhq4jogbumim",
+      "userEmail": "tejraj.choudhary@nokia.com",
+      "type": "rollup",
+      "title": "Your summary was included in the team roll-up",
+      "message": "Deepalaxmi Hegde K generated the team roll-up for week of 2026-03-30. Your weekly summary was included.",
+      "createdAt": "2026-04-02T17:03:30.976Z",
+      "readAt": null
+    },
+    {
+      "id": "mnhq4jogbsb8o",
+      "userEmail": "yasaswini.vissa@nokia.com",
+      "type": "rollup-missing",
+      "title": "Team roll-up generated — no submission from you",
+      "message": "Deepalaxmi Hegde K generated the team roll-up for week of 2026-03-30. You had no weekly summary submitted for this week.",
+      "createdAt": "2026-04-02T17:03:30.976Z",
+      "readAt": null
+    },
+    {
+      "id": "mnhqf8wmdnwth",
+      "userEmail": "anuj.kumar@nokia.com",
+      "type": "rollup",
+      "title": "Your summary was included in the team roll-up",
+      "message": "Deepalaxmi Hegde K generated the team roll-up for week of 2026-03-30. Your weekly summary was included.",
+      "createdAt": "2026-04-02T17:11:50.230Z",
+      "readAt": "2026-04-02T17:20:53.565Z"
+    },
+    {
+      "id": "mnhqf8wmxsqvk",
+      "userEmail": "deepak.2.n@nokia.com",
+      "type": "rollup",
+      "title": "Your summary was included in the team roll-up",
+      "message": "Deepalaxmi Hegde K generated the team roll-up for week of 2026-03-30. Your weekly summary was included.",
+      "createdAt": "2026-04-02T17:11:50.230Z",
+      "readAt": null
+    },
+    {
+      "id": "mnhqf8wmj6c7i",
+      "userEmail": "deepak.n@nokia.com",
+      "type": "rollup",
+      "title": "Your summary was included in the team roll-up",
+      "message": "Deepalaxmi Hegde K generated the team roll-up for week of 2026-03-30. Your weekly summary was included.",
+      "createdAt": "2026-04-02T17:11:50.230Z",
+      "readAt": null
+    },
+    {
+      "id": "mnhqf8wn4zfax",
+      "userEmail": "jayamani.t.ext@nokia.com",
+      "type": "rollup",
+      "title": "Your summary was included in the team roll-up",
+      "message": "Deepalaxmi Hegde K generated the team roll-up for week of 2026-03-30. Your weekly summary was included.",
+      "createdAt": "2026-04-02T17:11:50.230Z",
+      "readAt": null
+    },
+    {
+      "id": "mnhqf8wn8b2ya",
+      "userEmail": "krishnama_bala.srinivas_prabhu@nokia.com",
+      "type": "rollup-missing",
+      "title": "Team roll-up generated — no submission from you",
+      "message": "Deepalaxmi Hegde K generated the team roll-up for week of 2026-03-30. You had no weekly summary submitted for this week.",
+      "createdAt": "2026-04-02T17:11:50.230Z",
+      "readAt": null
+    },
+    {
+      "id": "mnhqf8wnmb5c3",
+      "userEmail": "rajneesh.yadav@nokia.com",
+      "type": "rollup",
+      "title": "Your summary was included in the team roll-up",
+      "message": "Deepalaxmi Hegde K generated the team roll-up for week of 2026-03-30. Your weekly summary was included.",
+      "createdAt": "2026-04-02T17:11:50.230Z",
+      "readAt": "2026-04-02T17:12:05.672Z"
+    },
+    {
+      "id": "mnhqf8wnzevo0",
+      "userEmail": "tejraj.choudhary@nokia.com",
+      "type": "rollup",
+      "title": "Your summary was included in the team roll-up",
+      "message": "Deepalaxmi Hegde K generated the team roll-up for week of 2026-03-30. Your weekly summary was included.",
+      "createdAt": "2026-04-02T17:11:50.230Z",
+      "readAt": null
+    },
+    {
+      "id": "mnhqf8wnrenvk",
+      "userEmail": "yasaswini.vissa@nokia.com",
+      "type": "rollup-missing",
+      "title": "Team roll-up generated — no submission from you",
+      "message": "Deepalaxmi Hegde K generated the team roll-up for week of 2026-03-30. You had no weekly summary submitted for this week.",
+      "createdAt": "2026-04-02T17:11:50.230Z",
+      "readAt": null
+    },
+    {
+      "id": "mnhqf8wnacipl",
+      "userEmail": "deepalaxmi.hegde_k@nokia.com",
+      "type": "rollup-sent",
+      "title": "Team roll-up notifications sent",
+      "message": "Roll-up for week of 2026-03-30 sent to 8 recipient(s). Skipped 29 without email: Ajay Balakrishnan, Ambresh A, Amulya PS, Biswabhusan Mishra, Chamarthi Dedeepya, Cheruvu Tejaswini, Dhanush N, Dileep N, Eliza Priyadarshinee, Kavya 1. M, Kiran Mohan E, Mohammed Mizfar N, Naveen Uppaluru, Nidhi Balachandra Bhat, Prabhulinga Prabhulinga, Pramod Haviruth, Priya S M, Priyanka 1. S, Puneeth G L, Radhika H, Ravi Prasad, Richi Mathur, S Komathy, Sainath Nair, Shreyash Sahu, Sindhu Murugesan, Sneha 2. Sneha, Stefano Mauri, Vagish Gupta.",
+      "createdAt": "2026-04-02T17:11:50.230Z",
+      "readAt": "2026-04-02T17:12:00.240Z"
+    },
+    {
+      "id": "mnhqo0avw8xiz",
+      "userEmail": "ajay.balakrishnan@nokia.com",
+      "type": "rollup-missing",
+      "title": "Team roll-up generated — no submission from you",
+      "message": "Deepalaxmi Hegde K generated the team roll-up for week of 2026-03-30. You had no weekly summary submitted for this week.",
+      "createdAt": "2026-04-02T17:18:38.983Z",
+      "readAt": null
+    },
+    {
+      "id": "mnhqo0av2too1",
+      "userEmail": "anuj.kumar@nokia.com",
+      "type": "rollup",
+      "title": "Your summary was included in the team roll-up",
+      "message": "Deepalaxmi Hegde K generated the team roll-up for week of 2026-03-30. Your weekly summary was included.",
+      "createdAt": "2026-04-02T17:18:38.983Z",
+      "readAt": "2026-04-02T17:20:53.565Z"
+    },
+    {
+      "id": "mnhqo0avf34zf",
+      "userEmail": "biswabhusan.mishra@nokia.com",
+      "type": "rollup-missing",
+      "title": "Team roll-up generated — no submission from you",
+      "message": "Deepalaxmi Hegde K generated the team roll-up for week of 2026-03-30. You had no weekly summary submitted for this week.",
+      "createdAt": "2026-04-02T17:18:38.983Z",
+      "readAt": null
+    },
+    {
+      "id": "mnhqo0av0jpe3",
+      "userEmail": "chamarthi.dedeepya@nokia.com",
+      "type": "rollup-missing",
+      "title": "Team roll-up generated — no submission from you",
+      "message": "Deepalaxmi Hegde K generated the team roll-up for week of 2026-03-30. You had no weekly summary submitted for this week.",
+      "createdAt": "2026-04-02T17:18:38.983Z",
+      "readAt": null
+    },
+    {
+      "id": "mnhqo0avcp0ra",
+      "userEmail": "cheruvu.tejaswini@nokia.com",
+      "type": "rollup-missing",
+      "title": "Team roll-up generated — no submission from you",
+      "message": "Deepalaxmi Hegde K generated the team roll-up for week of 2026-03-30. You had no weekly summary submitted for this week.",
+      "createdAt": "2026-04-02T17:18:38.983Z",
+      "readAt": null
+    },
+    {
+      "id": "mnhqo0avc9af2",
+      "userEmail": "deepak.2.n@nokia.com",
+      "type": "rollup",
+      "title": "Your summary was included in the team roll-up",
+      "message": "Deepalaxmi Hegde K generated the team roll-up for week of 2026-03-30. Your weekly summary was included.",
+      "createdAt": "2026-04-02T17:18:38.983Z",
+      "readAt": null
+    },
+    {
+      "id": "mnhqo0avimphp",
+      "userEmail": "deepak.n@nokia.com",
+      "type": "rollup",
+      "title": "Your summary was included in the team roll-up",
+      "message": "Deepalaxmi Hegde K generated the team roll-up for week of 2026-03-30. Your weekly summary was included.",
+      "createdAt": "2026-04-02T17:18:38.983Z",
+      "readAt": null
+    },
+    {
+      "id": "mnhqo0av6z0pp",
+      "userEmail": "dhanush.n@nokia.com",
+      "type": "rollup-missing",
+      "title": "Team roll-up generated — no submission from you",
+      "message": "Deepalaxmi Hegde K generated the team roll-up for week of 2026-03-30. You had no weekly summary submitted for this week.",
+      "createdAt": "2026-04-02T17:18:38.983Z",
+      "readAt": null
+    },
+    {
+      "id": "mnhqo0avqctj4",
+      "userEmail": "eliza.priyadarshinee@nokia.com",
+      "type": "rollup-missing",
+      "title": "Team roll-up generated — no submission from you",
+      "message": "Deepalaxmi Hegde K generated the team roll-up for week of 2026-03-30. You had no weekly summary submitted for this week.",
+      "createdAt": "2026-04-02T17:18:38.983Z",
+      "readAt": null
+    },
+    {
+      "id": "mnhqo0avzja19",
+      "userEmail": "jayamani.t.ext@nokia.com",
+      "type": "rollup",
+      "title": "Your summary was included in the team roll-up",
+      "message": "Deepalaxmi Hegde K generated the team roll-up for week of 2026-03-30. Your weekly summary was included.",
+      "createdAt": "2026-04-02T17:18:38.983Z",
+      "readAt": null
+    },
+    {
+      "id": "mnhqo0avqm595",
+      "userEmail": "kavya.1.m@nokia.com",
+      "type": "rollup-missing",
+      "title": "Team roll-up generated — no submission from you",
+      "message": "Deepalaxmi Hegde K generated the team roll-up for week of 2026-03-30. You had no weekly summary submitted for this week.",
+      "createdAt": "2026-04-02T17:18:38.983Z",
+      "readAt": null
+    },
+    {
+      "id": "mnhqo0avxa8km",
+      "userEmail": "kiran.mohan_e@nokia.com",
+      "type": "rollup-missing",
+      "title": "Team roll-up generated — no submission from you",
+      "message": "Deepalaxmi Hegde K generated the team roll-up for week of 2026-03-30. You had no weekly summary submitted for this week.",
+      "createdAt": "2026-04-02T17:18:38.983Z",
+      "readAt": null
+    },
+    {
+      "id": "mnhqo0avtj7k0",
+      "userEmail": "krishnama_bala.srinivas_prabhu@nokia.com",
+      "type": "rollup-missing",
+      "title": "Team roll-up generated — no submission from you",
+      "message": "Deepalaxmi Hegde K generated the team roll-up for week of 2026-03-30. You had no weekly summary submitted for this week.",
+      "createdAt": "2026-04-02T17:18:38.983Z",
+      "readAt": null
+    },
+    {
+      "id": "mnhqo0avl8409",
+      "userEmail": "mohammed.mizfar_n@nokia.com",
+      "type": "rollup-missing",
+      "title": "Team roll-up generated — no submission from you",
+      "message": "Deepalaxmi Hegde K generated the team roll-up for week of 2026-03-30. You had no weekly summary submitted for this week.",
+      "createdAt": "2026-04-02T17:18:38.983Z",
+      "readAt": null
+    },
+    {
+      "id": "mnhqo0av7diis",
+      "userEmail": "nidhi.balachandra_bhat@nokia.com",
+      "type": "rollup-missing",
+      "title": "Team roll-up generated — no submission from you",
+      "message": "Deepalaxmi Hegde K generated the team roll-up for week of 2026-03-30. You had no weekly summary submitted for this week.",
+      "createdAt": "2026-04-02T17:18:38.983Z",
+      "readAt": null
+    },
+    {
+      "id": "mnhqo0avxwvcu",
+      "userEmail": "prabhulinga.prabhulinga@nokia.com",
+      "type": "rollup-missing",
+      "title": "Team roll-up generated — no submission from you",
+      "message": "Deepalaxmi Hegde K generated the team roll-up for week of 2026-03-30. You had no weekly summary submitted for this week.",
+      "createdAt": "2026-04-02T17:18:38.983Z",
+      "readAt": null
+    },
+    {
+      "id": "mnhqo0av8wc98",
+      "userEmail": "pramod.haviruth@nokia.com",
+      "type": "rollup-missing",
+      "title": "Team roll-up generated — no submission from you",
+      "message": "Deepalaxmi Hegde K generated the team roll-up for week of 2026-03-30. You had no weekly summary submitted for this week.",
+      "createdAt": "2026-04-02T17:18:38.983Z",
+      "readAt": null
+    },
+    {
+      "id": "mnhqo0av5r3nw",
+      "userEmail": "priya.s_m@nokia.com",
+      "type": "rollup-missing",
+      "title": "Team roll-up generated — no submission from you",
+      "message": "Deepalaxmi Hegde K generated the team roll-up for week of 2026-03-30. You had no weekly summary submitted for this week.",
+      "createdAt": "2026-04-02T17:18:38.983Z",
+      "readAt": null
+    },
+    {
+      "id": "mnhqo0av4cod8",
+      "userEmail": "puneeth.g_l@nokia.com",
+      "type": "rollup-missing",
+      "title": "Team roll-up generated — no submission from you",
+      "message": "Deepalaxmi Hegde K generated the team roll-up for week of 2026-03-30. You had no weekly summary submitted for this week.",
+      "createdAt": "2026-04-02T17:18:38.983Z",
+      "readAt": null
+    },
+    {
+      "id": "mnhqo0avy6l0j",
+      "userEmail": "rajneesh.yadav@nokia.com",
+      "type": "rollup",
+      "title": "Your summary was included in the team roll-up",
+      "message": "Deepalaxmi Hegde K generated the team roll-up for week of 2026-03-30. Your weekly summary was included.",
+      "createdAt": "2026-04-02T17:18:38.983Z",
+      "readAt": null
+    },
+    {
+      "id": "mnhqo0avfatvn",
+      "userEmail": "ravi.prasad@nokia.com",
+      "type": "rollup-missing",
+      "title": "Team roll-up generated — no submission from you",
+      "message": "Deepalaxmi Hegde K generated the team roll-up for week of 2026-03-30. You had no weekly summary submitted for this week.",
+      "createdAt": "2026-04-02T17:18:38.983Z",
+      "readAt": null
+    },
+    {
+      "id": "mnhqo0avhc175",
+      "userEmail": "richi.mathur@nokia.com",
+      "type": "rollup-missing",
+      "title": "Team roll-up generated — no submission from you",
+      "message": "Deepalaxmi Hegde K generated the team roll-up for week of 2026-03-30. You had no weekly summary submitted for this week.",
+      "createdAt": "2026-04-02T17:18:38.983Z",
+      "readAt": null
+    },
+    {
+      "id": "mnhqo0av4lfnv",
+      "userEmail": "s.komathy@nokia.com",
+      "type": "rollup-missing",
+      "title": "Team roll-up generated — no submission from you",
+      "message": "Deepalaxmi Hegde K generated the team roll-up for week of 2026-03-30. You had no weekly summary submitted for this week.",
+      "createdAt": "2026-04-02T17:18:38.983Z",
+      "readAt": null
+    },
+    {
+      "id": "mnhqo0avne5yt",
+      "userEmail": "sainath.nair@nokia.com",
+      "type": "rollup-missing",
+      "title": "Team roll-up generated — no submission from you",
+      "message": "Deepalaxmi Hegde K generated the team roll-up for week of 2026-03-30. You had no weekly summary submitted for this week.",
+      "createdAt": "2026-04-02T17:18:38.983Z",
+      "readAt": "2026-04-02T17:19:05.950Z"
+    },
+    {
+      "id": "mnhqo0avpj67m",
+      "userEmail": "stefano.mauri@nokia.com",
+      "type": "rollup-missing",
+      "title": "Team roll-up generated — no submission from you",
+      "message": "Deepalaxmi Hegde K generated the team roll-up for week of 2026-03-30. You had no weekly summary submitted for this week.",
+      "createdAt": "2026-04-02T17:18:38.983Z",
+      "readAt": null
+    },
+    {
+      "id": "mnhqo0av0kzg3",
+      "userEmail": "tejraj.choudhary@nokia.com",
+      "type": "rollup",
+      "title": "Your summary was included in the team roll-up",
+      "message": "Deepalaxmi Hegde K generated the team roll-up for week of 2026-03-30. Your weekly summary was included.",
+      "createdAt": "2026-04-02T17:18:38.983Z",
+      "readAt": null
+    },
+    {
+      "id": "mnhqo0avns9pu",
+      "userEmail": "yasaswini.vissa@nokia.com",
+      "type": "rollup-missing",
+      "title": "Team roll-up generated — no submission from you",
+      "message": "Deepalaxmi Hegde K generated the team roll-up for week of 2026-03-30. You had no weekly summary submitted for this week.",
+      "createdAt": "2026-04-02T17:18:38.983Z",
+      "readAt": null
+    },
+    {
+      "id": "mnhqo0av0qgvm",
+      "userEmail": "deepalaxmi.hegde_k@nokia.com",
+      "type": "rollup-sent",
+      "title": "Team roll-up notifications sent",
+      "message": "Roll-up for week of 2026-03-30 sent to 27 recipient(s). Skipped 10 without email: Ambresh A, Amulya PS, Dileep N, Naveen Uppaluru, Priyanka 1. S, Radhika H, Shreyash Sahu, Sindhu Murugesan, Sneha 2. Sneha, Vagish Gupta.",
+      "createdAt": "2026-04-02T17:18:38.983Z",
+      "readAt": "2026-04-02T17:18:46.196Z"
+    },
+    {
+      "id": "mnhquvvnidmws",
+      "userEmail": "ajay.balakrishnan@nokia.com",
+      "type": "rollup-missing",
+      "title": "Team roll-up generated — no submission from you",
+      "message": "Deepalaxmi Hegde K generated the team roll-up for week of 2026-03-30. You had no weekly summary submitted for this week.",
+      "createdAt": "2026-04-02T17:23:59.843Z",
+      "readAt": null
+    },
+    {
+      "id": "mnhquvvn2wwre",
+      "userEmail": "anuj.kumar@nokia.com",
+      "type": "rollup",
+      "title": "Your summary was included in the team roll-up",
+      "message": "Deepalaxmi Hegde K generated the team roll-up for week of 2026-03-30. Your weekly summary was included.",
+      "createdAt": "2026-04-02T17:23:59.843Z",
+      "readAt": "2026-04-02T17:24:37.619Z"
+    },
+    {
+      "id": "mnhquvvnac23t",
+      "userEmail": "biswabhusan.mishra@nokia.com",
+      "type": "rollup-missing",
+      "title": "Team roll-up generated — no submission from you",
+      "message": "Deepalaxmi Hegde K generated the team roll-up for week of 2026-03-30. You had no weekly summary submitted for this week.",
+      "createdAt": "2026-04-02T17:23:59.843Z",
+      "readAt": null
+    },
+    {
+      "id": "mnhquvvn0qmpl",
+      "userEmail": "chamarthi.dedeepya@nokia.com",
+      "type": "rollup-missing",
+      "title": "Team roll-up generated — no submission from you",
+      "message": "Deepalaxmi Hegde K generated the team roll-up for week of 2026-03-30. You had no weekly summary submitted for this week.",
+      "createdAt": "2026-04-02T17:23:59.843Z",
+      "readAt": null
+    },
+    {
+      "id": "mnhquvvnj4j1e",
+      "userEmail": "cheruvu.tejaswini@nokia.com",
+      "type": "rollup-missing",
+      "title": "Team roll-up generated — no submission from you",
+      "message": "Deepalaxmi Hegde K generated the team roll-up for week of 2026-03-30. You had no weekly summary submitted for this week.",
+      "createdAt": "2026-04-02T17:23:59.843Z",
+      "readAt": null
+    },
+    {
+      "id": "mnhquvvnuqy8j",
+      "userEmail": "deepak.2.n@nokia.com",
+      "type": "rollup",
+      "title": "Your summary was included in the team roll-up",
+      "message": "Deepalaxmi Hegde K generated the team roll-up for week of 2026-03-30. Your weekly summary was included.",
+      "createdAt": "2026-04-02T17:23:59.843Z",
+      "readAt": null
+    },
+    {
+      "id": "mnhquvvn1gspn",
+      "userEmail": "deepak.n@nokia.com",
+      "type": "rollup",
+      "title": "Your summary was included in the team roll-up",
+      "message": "Deepalaxmi Hegde K generated the team roll-up for week of 2026-03-30. Your weekly summary was included.",
+      "createdAt": "2026-04-02T17:23:59.843Z",
+      "readAt": null
+    },
+    {
+      "id": "mnhquvvn2w9q6",
+      "userEmail": "dhanush.n@nokia.com",
+      "type": "rollup-missing",
+      "title": "Team roll-up generated — no submission from you",
+      "message": "Deepalaxmi Hegde K generated the team roll-up for week of 2026-03-30. You had no weekly summary submitted for this week.",
+      "createdAt": "2026-04-02T17:23:59.843Z",
+      "readAt": null
+    },
+    {
+      "id": "mnhquvvnxt6kz",
+      "userEmail": "eliza.priyadarshinee@nokia.com",
+      "type": "rollup-missing",
+      "title": "Team roll-up generated — no submission from you",
+      "message": "Deepalaxmi Hegde K generated the team roll-up for week of 2026-03-30. You had no weekly summary submitted for this week.",
+      "createdAt": "2026-04-02T17:23:59.843Z",
+      "readAt": null
+    },
+    {
+      "id": "mnhquvvnmap07",
+      "userEmail": "jayamani.t.ext@nokia.com",
+      "type": "rollup",
+      "title": "Your summary was included in the team roll-up",
+      "message": "Deepalaxmi Hegde K generated the team roll-up for week of 2026-03-30. Your weekly summary was included.",
+      "createdAt": "2026-04-02T17:23:59.843Z",
+      "readAt": null
+    },
+    {
+      "id": "mnhquvvodmgvj",
+      "userEmail": "kavya.1.m@nokia.com",
+      "type": "rollup-missing",
+      "title": "Team roll-up generated — no submission from you",
+      "message": "Deepalaxmi Hegde K generated the team roll-up for week of 2026-03-30. You had no weekly summary submitted for this week.",
+      "createdAt": "2026-04-02T17:23:59.843Z",
+      "readAt": null
+    },
+    {
+      "id": "mnhquvvo34rl0",
+      "userEmail": "kiran.mohan_e@nokia.com",
+      "type": "rollup-missing",
+      "title": "Team roll-up generated — no submission from you",
+      "message": "Deepalaxmi Hegde K generated the team roll-up for week of 2026-03-30. You had no weekly summary submitted for this week.",
+      "createdAt": "2026-04-02T17:23:59.843Z",
+      "readAt": null
+    },
+    {
+      "id": "mnhquvvov5i32",
+      "userEmail": "krishnama_bala.srinivas_prabhu@nokia.com",
+      "type": "rollup-missing",
+      "title": "Team roll-up generated — no submission from you",
+      "message": "Deepalaxmi Hegde K generated the team roll-up for week of 2026-03-30. You had no weekly summary submitted for this week.",
+      "createdAt": "2026-04-02T17:23:59.843Z",
+      "readAt": null
+    },
+    {
+      "id": "mnhquvvo350xd",
+      "userEmail": "mohammed.mizfar_n@nokia.com",
+      "type": "rollup-missing",
+      "title": "Team roll-up generated — no submission from you",
+      "message": "Deepalaxmi Hegde K generated the team roll-up for week of 2026-03-30. You had no weekly summary submitted for this week.",
+      "createdAt": "2026-04-02T17:23:59.843Z",
+      "readAt": null
+    },
+    {
+      "id": "mnhquvvoxgdzx",
+      "userEmail": "nidhi.balachandra_bhat@nokia.com",
+      "type": "rollup-missing",
+      "title": "Team roll-up generated — no submission from you",
+      "message": "Deepalaxmi Hegde K generated the team roll-up for week of 2026-03-30. You had no weekly summary submitted for this week.",
+      "createdAt": "2026-04-02T17:23:59.843Z",
+      "readAt": null
+    },
+    {
+      "id": "mnhquvvoa3c58",
+      "userEmail": "prabhulinga.prabhulinga@nokia.com",
+      "type": "rollup-missing",
+      "title": "Team roll-up generated — no submission from you",
+      "message": "Deepalaxmi Hegde K generated the team roll-up for week of 2026-03-30. You had no weekly summary submitted for this week.",
+      "createdAt": "2026-04-02T17:23:59.843Z",
+      "readAt": null
+    },
+    {
+      "id": "mnhquvvoh40bs",
+      "userEmail": "pramod.haviruth@nokia.com",
+      "type": "rollup-missing",
+      "title": "Team roll-up generated — no submission from you",
+      "message": "Deepalaxmi Hegde K generated the team roll-up for week of 2026-03-30. You had no weekly summary submitted for this week.",
+      "createdAt": "2026-04-02T17:23:59.843Z",
+      "readAt": null
+    },
+    {
+      "id": "mnhquvvon6bc9",
+      "userEmail": "priya.s_m@nokia.com",
+      "type": "rollup-missing",
+      "title": "Team roll-up generated — no submission from you",
+      "message": "Deepalaxmi Hegde K generated the team roll-up for week of 2026-03-30. You had no weekly summary submitted for this week.",
+      "createdAt": "2026-04-02T17:23:59.843Z",
+      "readAt": null
+    },
+    {
+      "id": "mnhquvvottzb2",
+      "userEmail": "puneeth.g_l@nokia.com",
+      "type": "rollup-missing",
+      "title": "Team roll-up generated — no submission from you",
+      "message": "Deepalaxmi Hegde K generated the team roll-up for week of 2026-03-30. You had no weekly summary submitted for this week.",
+      "createdAt": "2026-04-02T17:23:59.843Z",
+      "readAt": null
+    },
+    {
+      "id": "mnhquvvo4xue0",
+      "userEmail": "rajneesh.yadav@nokia.com",
+      "type": "rollup",
+      "title": "Your summary was included in the team roll-up",
+      "message": "Deepalaxmi Hegde K generated the team roll-up for week of 2026-03-30. Your weekly summary was included.",
+      "createdAt": "2026-04-02T17:23:59.843Z",
+      "readAt": null
+    },
+    {
+      "id": "mnhquvvo6o1df",
+      "userEmail": "ravi.prasad@nokia.com",
+      "type": "rollup-missing",
+      "title": "Team roll-up generated — no submission from you",
+      "message": "Deepalaxmi Hegde K generated the team roll-up for week of 2026-03-30. You had no weekly summary submitted for this week.",
+      "createdAt": "2026-04-02T17:23:59.843Z",
+      "readAt": null
+    },
+    {
+      "id": "mnhquvvok2ssf",
+      "userEmail": "richi.mathur@nokia.com",
+      "type": "rollup-missing",
+      "title": "Team roll-up generated — no submission from you",
+      "message": "Deepalaxmi Hegde K generated the team roll-up for week of 2026-03-30. You had no weekly summary submitted for this week.",
+      "createdAt": "2026-04-02T17:23:59.843Z",
+      "readAt": null
+    },
+    {
+      "id": "mnhquvvoniun9",
+      "userEmail": "s.komathy@nokia.com",
+      "type": "rollup-missing",
+      "title": "Team roll-up generated — no submission from you",
+      "message": "Deepalaxmi Hegde K generated the team roll-up for week of 2026-03-30. You had no weekly summary submitted for this week.",
+      "createdAt": "2026-04-02T17:23:59.843Z",
+      "readAt": null
+    },
+    {
+      "id": "mnhquvvo76wz3",
+      "userEmail": "sainath.nair@nokia.com",
+      "type": "rollup-missing",
+      "title": "Team roll-up generated — no submission from you",
+      "message": "Deepalaxmi Hegde K generated the team roll-up for week of 2026-03-30. You had no weekly summary submitted for this week.",
+      "createdAt": "2026-04-02T17:23:59.843Z",
+      "readAt": null
+    },
+    {
+      "id": "mnhquvvojymh1",
+      "userEmail": "stefano.mauri@nokia.com",
+      "type": "rollup-missing",
+      "title": "Team roll-up generated — no submission from you",
+      "message": "Deepalaxmi Hegde K generated the team roll-up for week of 2026-03-30. You had no weekly summary submitted for this week.",
+      "createdAt": "2026-04-02T17:23:59.843Z",
+      "readAt": null
+    },
+    {
+      "id": "mnhquvvo2x6ka",
+      "userEmail": "tejraj.choudhary@nokia.com",
+      "type": "rollup",
+      "title": "Your summary was included in the team roll-up",
+      "message": "Deepalaxmi Hegde K generated the team roll-up for week of 2026-03-30. Your weekly summary was included.",
+      "createdAt": "2026-04-02T17:23:59.843Z",
+      "readAt": null
+    },
+    {
+      "id": "mnhquvvozg5gn",
+      "userEmail": "yasaswini.vissa@nokia.com",
+      "type": "rollup-missing",
+      "title": "Team roll-up generated — no submission from you",
+      "message": "Deepalaxmi Hegde K generated the team roll-up for week of 2026-03-30. You had no weekly summary submitted for this week.",
+      "createdAt": "2026-04-02T17:23:59.843Z",
+      "readAt": null
+    },
+    {
+      "id": "mnhquvvol8jcu",
+      "userEmail": "deepalaxmi.hegde_k@nokia.com",
+      "type": "rollup-sent",
+      "title": "Team roll-up notifications sent",
+      "message": "Roll-up for week of 2026-03-30 sent to 27 recipient(s). Skipped 10 without email: Ambresh A, Amulya PS, Dileep N, Naveen Uppaluru, Priyanka 1. S, Radhika H, Shreyash Sahu, Sindhu Murugesan, Sneha 2. Sneha, Vagish Gupta.",
+      "createdAt": "2026-04-02T17:23:59.843Z",
+      "readAt": "2026-04-02T17:24:07.154Z"
+    },
+    {
+      "id": "mnhrfmth4ialy",
+      "userEmail": "ajay.balakrishnan@nokia.com",
+      "type": "rollup-missing",
+      "title": "Team roll-up generated — no submission from you",
+      "message": "Deepalaxmi Hegde K generated the team roll-up for week of 2026-03-30. You had no weekly summary submitted for this week.",
+      "createdAt": "2026-04-02T17:40:07.876Z",
+      "readAt": null
+    },
+    {
+      "id": "mnhrfmthybpve",
+      "userEmail": "anuj.kumar@nokia.com",
+      "type": "rollup",
+      "title": "Your summary was included in the team roll-up",
+      "message": "Deepalaxmi Hegde K generated the team roll-up for week of 2026-03-30. Your weekly summary was included.",
+      "createdAt": "2026-04-02T17:40:07.876Z",
+      "readAt": null
+    },
+    {
+      "id": "mnhrfmthxecyd",
+      "userEmail": "biswabhusan.mishra@nokia.com",
+      "type": "rollup-missing",
+      "title": "Team roll-up generated — no submission from you",
+      "message": "Deepalaxmi Hegde K generated the team roll-up for week of 2026-03-30. You had no weekly summary submitted for this week.",
+      "createdAt": "2026-04-02T17:40:07.876Z",
+      "readAt": null
+    },
+    {
+      "id": "mnhrfmthjrabt",
+      "userEmail": "chamarthi.dedeepya@nokia.com",
+      "type": "rollup-missing",
+      "title": "Team roll-up generated — no submission from you",
+      "message": "Deepalaxmi Hegde K generated the team roll-up for week of 2026-03-30. You had no weekly summary submitted for this week.",
+      "createdAt": "2026-04-02T17:40:07.876Z",
+      "readAt": null
+    },
+    {
+      "id": "mnhrfmth4cwqu",
+      "userEmail": "cheruvu.tejaswini@nokia.com",
+      "type": "rollup-missing",
+      "title": "Team roll-up generated — no submission from you",
+      "message": "Deepalaxmi Hegde K generated the team roll-up for week of 2026-03-30. You had no weekly summary submitted for this week.",
+      "createdAt": "2026-04-02T17:40:07.876Z",
+      "readAt": null
+    },
+    {
+      "id": "mnhrfmthul5m9",
+      "userEmail": "deepak.2.n@nokia.com",
+      "type": "rollup",
+      "title": "Your summary was included in the team roll-up",
+      "message": "Deepalaxmi Hegde K generated the team roll-up for week of 2026-03-30. Your weekly summary was included.",
+      "createdAt": "2026-04-02T17:40:07.876Z",
+      "readAt": null
+    },
+    {
+      "id": "mnhrfmthxrqvj",
+      "userEmail": "deepak.n@nokia.com",
+      "type": "rollup",
+      "title": "Your summary was included in the team roll-up",
+      "message": "Deepalaxmi Hegde K generated the team roll-up for week of 2026-03-30. Your weekly summary was included.",
+      "createdAt": "2026-04-02T17:40:07.876Z",
+      "readAt": null
+    },
+    {
+      "id": "mnhrfmth3jy7g",
+      "userEmail": "dhanush.n@nokia.com",
+      "type": "rollup-missing",
+      "title": "Team roll-up generated — no submission from you",
+      "message": "Deepalaxmi Hegde K generated the team roll-up for week of 2026-03-30. You had no weekly summary submitted for this week.",
+      "createdAt": "2026-04-02T17:40:07.876Z",
+      "readAt": null
+    },
+    {
+      "id": "mnhrfmthkl2mc",
+      "userEmail": "eliza.priyadarshinee@nokia.com",
+      "type": "rollup-missing",
+      "title": "Team roll-up generated — no submission from you",
+      "message": "Deepalaxmi Hegde K generated the team roll-up for week of 2026-03-30. You had no weekly summary submitted for this week.",
+      "createdAt": "2026-04-02T17:40:07.876Z",
+      "readAt": null
+    },
+    {
+      "id": "mnhrfmthrbl46",
+      "userEmail": "jayamani.t.ext@nokia.com",
+      "type": "rollup",
+      "title": "Your summary was included in the team roll-up",
+      "message": "Deepalaxmi Hegde K generated the team roll-up for week of 2026-03-30. Your weekly summary was included.",
+      "createdAt": "2026-04-02T17:40:07.876Z",
+      "readAt": null
+    },
+    {
+      "id": "mnhrfmth7khhs",
+      "userEmail": "kavya.1.m@nokia.com",
+      "type": "rollup-missing",
+      "title": "Team roll-up generated — no submission from you",
+      "message": "Deepalaxmi Hegde K generated the team roll-up for week of 2026-03-30. You had no weekly summary submitted for this week.",
+      "createdAt": "2026-04-02T17:40:07.876Z",
+      "readAt": null
+    },
+    {
+      "id": "mnhrfmth5rqd0",
+      "userEmail": "kiran.mohan_e@nokia.com",
+      "type": "rollup-missing",
+      "title": "Team roll-up generated — no submission from you",
+      "message": "Deepalaxmi Hegde K generated the team roll-up for week of 2026-03-30. You had no weekly summary submitted for this week.",
+      "createdAt": "2026-04-02T17:40:07.876Z",
+      "readAt": null
+    },
+    {
+      "id": "mnhrfmthp8i1i",
+      "userEmail": "krishnama_bala.srinivas_prabhu@nokia.com",
+      "type": "rollup-missing",
+      "title": "Team roll-up generated — no submission from you",
+      "message": "Deepalaxmi Hegde K generated the team roll-up for week of 2026-03-30. You had no weekly summary submitted for this week.",
+      "createdAt": "2026-04-02T17:40:07.876Z",
+      "readAt": null
+    },
+    {
+      "id": "mnhrfmthpcojj",
+      "userEmail": "mohammed.mizfar_n@nokia.com",
+      "type": "rollup-missing",
+      "title": "Team roll-up generated — no submission from you",
+      "message": "Deepalaxmi Hegde K generated the team roll-up for week of 2026-03-30. You had no weekly summary submitted for this week.",
+      "createdAt": "2026-04-02T17:40:07.876Z",
+      "readAt": null
+    },
+    {
+      "id": "mnhrfmthrwz6c",
+      "userEmail": "nidhi.balachandra_bhat@nokia.com",
+      "type": "rollup-missing",
+      "title": "Team roll-up generated — no submission from you",
+      "message": "Deepalaxmi Hegde K generated the team roll-up for week of 2026-03-30. You had no weekly summary submitted for this week.",
+      "createdAt": "2026-04-02T17:40:07.876Z",
+      "readAt": null
+    },
+    {
+      "id": "mnhrfmthaiw5h",
+      "userEmail": "prabhulinga.prabhulinga@nokia.com",
+      "type": "rollup-missing",
+      "title": "Team roll-up generated — no submission from you",
+      "message": "Deepalaxmi Hegde K generated the team roll-up for week of 2026-03-30. You had no weekly summary submitted for this week.",
+      "createdAt": "2026-04-02T17:40:07.876Z",
+      "readAt": null
+    },
+    {
+      "id": "mnhrfmthpe948",
+      "userEmail": "pramod.haviruth@nokia.com",
+      "type": "rollup-missing",
+      "title": "Team roll-up generated — no submission from you",
+      "message": "Deepalaxmi Hegde K generated the team roll-up for week of 2026-03-30. You had no weekly summary submitted for this week.",
+      "createdAt": "2026-04-02T17:40:07.876Z",
+      "readAt": null
+    },
+    {
+      "id": "mnhrfmtho4q8i",
+      "userEmail": "priya.s_m@nokia.com",
+      "type": "rollup-missing",
+      "title": "Team roll-up generated — no submission from you",
+      "message": "Deepalaxmi Hegde K generated the team roll-up for week of 2026-03-30. You had no weekly summary submitted for this week.",
+      "createdAt": "2026-04-02T17:40:07.876Z",
+      "readAt": null
+    },
+    {
+      "id": "mnhrfmthzauim",
+      "userEmail": "puneeth.g_l@nokia.com",
+      "type": "rollup-missing",
+      "title": "Team roll-up generated — no submission from you",
+      "message": "Deepalaxmi Hegde K generated the team roll-up for week of 2026-03-30. You had no weekly summary submitted for this week.",
+      "createdAt": "2026-04-02T17:40:07.876Z",
+      "readAt": null
+    },
+    {
+      "id": "mnhrfmthh93mb",
+      "userEmail": "rajneesh.yadav@nokia.com",
+      "type": "rollup",
+      "title": "Your summary was included in the team roll-up",
+      "message": "Deepalaxmi Hegde K generated the team roll-up for week of 2026-03-30. Your weekly summary was included.",
+      "createdAt": "2026-04-02T17:40:07.876Z",
+      "readAt": null
+    },
+    {
+      "id": "mnhrfmthxz3dx",
+      "userEmail": "ravi.prasad@nokia.com",
+      "type": "rollup-missing",
+      "title": "Team roll-up generated — no submission from you",
+      "message": "Deepalaxmi Hegde K generated the team roll-up for week of 2026-03-30. You had no weekly summary submitted for this week.",
+      "createdAt": "2026-04-02T17:40:07.876Z",
+      "readAt": null
+    },
+    {
+      "id": "mnhrfmtitwbjy",
+      "userEmail": "richi.mathur@nokia.com",
+      "type": "rollup-missing",
+      "title": "Team roll-up generated — no submission from you",
+      "message": "Deepalaxmi Hegde K generated the team roll-up for week of 2026-03-30. You had no weekly summary submitted for this week.",
+      "createdAt": "2026-04-02T17:40:07.876Z",
+      "readAt": null
+    },
+    {
+      "id": "mnhrfmtikwmfg",
+      "userEmail": "s.komathy@nokia.com",
+      "type": "rollup-missing",
+      "title": "Team roll-up generated — no submission from you",
+      "message": "Deepalaxmi Hegde K generated the team roll-up for week of 2026-03-30. You had no weekly summary submitted for this week.",
+      "createdAt": "2026-04-02T17:40:07.876Z",
+      "readAt": null
+    },
+    {
+      "id": "mnhrfmtik57wu",
+      "userEmail": "sainath.nair@nokia.com",
+      "type": "rollup-missing",
+      "title": "Team roll-up generated — no submission from you",
+      "message": "Deepalaxmi Hegde K generated the team roll-up for week of 2026-03-30. You had no weekly summary submitted for this week.",
+      "createdAt": "2026-04-02T17:40:07.876Z",
+      "readAt": null
+    },
+    {
+      "id": "mnhrfmtie69u6",
+      "userEmail": "stefano.mauri@nokia.com",
+      "type": "rollup-missing",
+      "title": "Team roll-up generated — no submission from you",
+      "message": "Deepalaxmi Hegde K generated the team roll-up for week of 2026-03-30. You had no weekly summary submitted for this week.",
+      "createdAt": "2026-04-02T17:40:07.876Z",
+      "readAt": null
+    },
+    {
+      "id": "mnhrfmtir0ip6",
+      "userEmail": "tejraj.choudhary@nokia.com",
+      "type": "rollup",
+      "title": "Your summary was included in the team roll-up",
+      "message": "Deepalaxmi Hegde K generated the team roll-up for week of 2026-03-30. Your weekly summary was included.",
+      "createdAt": "2026-04-02T17:40:07.876Z",
+      "readAt": null
+    },
+    {
+      "id": "mnhrfmti8jw4z",
+      "userEmail": "yasaswini.vissa@nokia.com",
+      "type": "rollup-missing",
+      "title": "Team roll-up generated — no submission from you",
+      "message": "Deepalaxmi Hegde K generated the team roll-up for week of 2026-03-30. You had no weekly summary submitted for this week.",
+      "createdAt": "2026-04-02T17:40:07.876Z",
+      "readAt": null
+    },
+    {
+      "id": "mnhrfmtijiq5h",
+      "userEmail": "deepalaxmi.hegde_k@nokia.com",
+      "type": "rollup-sent",
+      "title": "Team roll-up notifications sent",
+      "message": "Roll-up for week of 2026-03-30 sent to 27 recipient(s). Skipped 10 without email: Ambresh A, Amulya PS, Dileep N, Naveen Uppaluru, Priyanka 1. S, Radhika H, Shreyash Sahu, Sindhu Murugesan, Sneha 2. Sneha, Vagish Gupta.",
+      "createdAt": "2026-04-02T17:40:07.876Z",
+      "readAt": "2026-04-02T17:41:03.063Z"
+    },
+    {
+      "id": "mnhrwo44ih1fc",
+      "userEmail": "ajay.balakrishnan@nokia.com",
+      "type": "rollup-missing",
+      "title": "Team roll-up generated — no submission from you",
+      "message": "Deepalaxmi Hegde K generated the team roll-up for week of 2026-03-30. You had no weekly summary submitted for this week.",
+      "createdAt": "2026-04-02T17:53:22.708Z",
+      "readAt": null
+    },
+    {
+      "id": "mnhrwo44vtnz8",
+      "userEmail": "anuj.kumar@nokia.com",
+      "type": "rollup",
+      "title": "Your summary was included in the team roll-up",
+      "message": "Deepalaxmi Hegde K generated the team roll-up for week of 2026-03-30. Your weekly summary was included.",
+      "createdAt": "2026-04-02T17:53:22.708Z",
+      "readAt": null
+    },
+    {
+      "id": "mnhrwo443kglv",
+      "userEmail": "biswabhusan.mishra@nokia.com",
+      "type": "rollup-missing",
+      "title": "Team roll-up generated — no submission from you",
+      "message": "Deepalaxmi Hegde K generated the team roll-up for week of 2026-03-30. You had no weekly summary submitted for this week.",
+      "createdAt": "2026-04-02T17:53:22.708Z",
+      "readAt": null
+    },
+    {
+      "id": "mnhrwo447egtg",
+      "userEmail": "chamarthi.dedeepya@nokia.com",
+      "type": "rollup-missing",
+      "title": "Team roll-up generated — no submission from you",
+      "message": "Deepalaxmi Hegde K generated the team roll-up for week of 2026-03-30. You had no weekly summary submitted for this week.",
+      "createdAt": "2026-04-02T17:53:22.708Z",
+      "readAt": null
+    },
+    {
+      "id": "mnhrwo44200ma",
+      "userEmail": "cheruvu.tejaswini@nokia.com",
+      "type": "rollup-missing",
+      "title": "Team roll-up generated — no submission from you",
+      "message": "Deepalaxmi Hegde K generated the team roll-up for week of 2026-03-30. You had no weekly summary submitted for this week.",
+      "createdAt": "2026-04-02T17:53:22.708Z",
+      "readAt": null
+    },
+    {
+      "id": "mnhrwo44yvq4h",
+      "userEmail": "deepak.2.n@nokia.com",
+      "type": "rollup",
+      "title": "Your summary was included in the team roll-up",
+      "message": "Deepalaxmi Hegde K generated the team roll-up for week of 2026-03-30. Your weekly summary was included.",
+      "createdAt": "2026-04-02T17:53:22.708Z",
+      "readAt": null
+    },
+    {
+      "id": "mnhrwo44r4sdn",
+      "userEmail": "deepak.n@nokia.com",
+      "type": "rollup",
+      "title": "Your summary was included in the team roll-up",
+      "message": "Deepalaxmi Hegde K generated the team roll-up for week of 2026-03-30. Your weekly summary was included.",
+      "createdAt": "2026-04-02T17:53:22.708Z",
+      "readAt": null
+    },
+    {
+      "id": "mnhrwo44izmx1",
+      "userEmail": "dhanush.n@nokia.com",
+      "type": "rollup-missing",
+      "title": "Team roll-up generated — no submission from you",
+      "message": "Deepalaxmi Hegde K generated the team roll-up for week of 2026-03-30. You had no weekly summary submitted for this week.",
+      "createdAt": "2026-04-02T17:53:22.708Z",
+      "readAt": null
+    },
+    {
+      "id": "mnhrwo44x4ob3",
+      "userEmail": "eliza.priyadarshinee@nokia.com",
+      "type": "rollup-missing",
+      "title": "Team roll-up generated — no submission from you",
+      "message": "Deepalaxmi Hegde K generated the team roll-up for week of 2026-03-30. You had no weekly summary submitted for this week.",
+      "createdAt": "2026-04-02T17:53:22.708Z",
+      "readAt": null
+    },
+    {
+      "id": "mnhrwo44va20b",
+      "userEmail": "jayamani.t.ext@nokia.com",
+      "type": "rollup",
+      "title": "Your summary was included in the team roll-up",
+      "message": "Deepalaxmi Hegde K generated the team roll-up for week of 2026-03-30. Your weekly summary was included.",
+      "createdAt": "2026-04-02T17:53:22.708Z",
+      "readAt": null
+    },
+    {
+      "id": "mnhrwo44npxdj",
+      "userEmail": "kavya.1.m@nokia.com",
+      "type": "rollup-missing",
+      "title": "Team roll-up generated — no submission from you",
+      "message": "Deepalaxmi Hegde K generated the team roll-up for week of 2026-03-30. You had no weekly summary submitted for this week.",
+      "createdAt": "2026-04-02T17:53:22.708Z",
+      "readAt": null
+    },
+    {
+      "id": "mnhrwo44sxfh8",
+      "userEmail": "kiran.mohan_e@nokia.com",
+      "type": "rollup-missing",
+      "title": "Team roll-up generated — no submission from you",
+      "message": "Deepalaxmi Hegde K generated the team roll-up for week of 2026-03-30. You had no weekly summary submitted for this week.",
+      "createdAt": "2026-04-02T17:53:22.708Z",
+      "readAt": null
+    },
+    {
+      "id": "mnhrwo4493kfu",
+      "userEmail": "krishnama_bala.srinivas_prabhu@nokia.com",
+      "type": "rollup-missing",
+      "title": "Team roll-up generated — no submission from you",
+      "message": "Deepalaxmi Hegde K generated the team roll-up for week of 2026-03-30. You had no weekly summary submitted for this week.",
+      "createdAt": "2026-04-02T17:53:22.708Z",
+      "readAt": null
+    },
+    {
+      "id": "mnhrwo441uord",
+      "userEmail": "mohammed.mizfar_n@nokia.com",
+      "type": "rollup-missing",
+      "title": "Team roll-up generated — no submission from you",
+      "message": "Deepalaxmi Hegde K generated the team roll-up for week of 2026-03-30. You had no weekly summary submitted for this week.",
+      "createdAt": "2026-04-02T17:53:22.708Z",
+      "readAt": null
+    },
+    {
+      "id": "mnhrwo448khxt",
+      "userEmail": "nidhi.balachandra_bhat@nokia.com",
+      "type": "rollup-missing",
+      "title": "Team roll-up generated — no submission from you",
+      "message": "Deepalaxmi Hegde K generated the team roll-up for week of 2026-03-30. You had no weekly summary submitted for this week.",
+      "createdAt": "2026-04-02T17:53:22.708Z",
+      "readAt": null
+    },
+    {
+      "id": "mnhrwo44wttag",
+      "userEmail": "prabhulinga.prabhulinga@nokia.com",
+      "type": "rollup-missing",
+      "title": "Team roll-up generated — no submission from you",
+      "message": "Deepalaxmi Hegde K generated the team roll-up for week of 2026-03-30. You had no weekly summary submitted for this week.",
+      "createdAt": "2026-04-02T17:53:22.708Z",
+      "readAt": null
+    },
+    {
+      "id": "mnhrwo44kdlu6",
+      "userEmail": "pramod.haviruth@nokia.com",
+      "type": "rollup-missing",
+      "title": "Team roll-up generated — no submission from you",
+      "message": "Deepalaxmi Hegde K generated the team roll-up for week of 2026-03-30. You had no weekly summary submitted for this week.",
+      "createdAt": "2026-04-02T17:53:22.708Z",
+      "readAt": null
+    },
+    {
+      "id": "mnhrwo443d6e7",
+      "userEmail": "priya.s_m@nokia.com",
+      "type": "rollup-missing",
+      "title": "Team roll-up generated — no submission from you",
+      "message": "Deepalaxmi Hegde K generated the team roll-up for week of 2026-03-30. You had no weekly summary submitted for this week.",
+      "createdAt": "2026-04-02T17:53:22.708Z",
+      "readAt": null
+    },
+    {
+      "id": "mnhrwo44czgdv",
+      "userEmail": "puneeth.g_l@nokia.com",
+      "type": "rollup-missing",
+      "title": "Team roll-up generated — no submission from you",
+      "message": "Deepalaxmi Hegde K generated the team roll-up for week of 2026-03-30. You had no weekly summary submitted for this week.",
+      "createdAt": "2026-04-02T17:53:22.708Z",
+      "readAt": null
+    },
+    {
+      "id": "mnhrwo440q9h1",
+      "userEmail": "rajneesh.yadav@nokia.com",
+      "type": "rollup",
+      "title": "Your summary was included in the team roll-up",
+      "message": "Deepalaxmi Hegde K generated the team roll-up for week of 2026-03-30. Your weekly summary was included.",
+      "createdAt": "2026-04-02T17:53:22.708Z",
+      "readAt": null
+    },
+    {
+      "id": "mnhrwo44oka8d",
+      "userEmail": "ravi.prasad@nokia.com",
+      "type": "rollup-missing",
+      "title": "Team roll-up generated — no submission from you",
+      "message": "Deepalaxmi Hegde K generated the team roll-up for week of 2026-03-30. You had no weekly summary submitted for this week.",
+      "createdAt": "2026-04-02T17:53:22.708Z",
+      "readAt": null
+    },
+    {
+      "id": "mnhrwo44hgxrw",
+      "userEmail": "richi.mathur@nokia.com",
+      "type": "rollup-missing",
+      "title": "Team roll-up generated — no submission from you",
+      "message": "Deepalaxmi Hegde K generated the team roll-up for week of 2026-03-30. You had no weekly summary submitted for this week.",
+      "createdAt": "2026-04-02T17:53:22.708Z",
+      "readAt": null
+    },
+    {
+      "id": "mnhrwo44d9sep",
+      "userEmail": "s.komathy@nokia.com",
+      "type": "rollup-missing",
+      "title": "Team roll-up generated — no submission from you",
+      "message": "Deepalaxmi Hegde K generated the team roll-up for week of 2026-03-30. You had no weekly summary submitted for this week.",
+      "createdAt": "2026-04-02T17:53:22.708Z",
+      "readAt": null
+    },
+    {
+      "id": "mnhrwo445537c",
+      "userEmail": "sainath.nair@nokia.com",
+      "type": "rollup-missing",
+      "title": "Team roll-up generated — no submission from you",
+      "message": "Deepalaxmi Hegde K generated the team roll-up for week of 2026-03-30. You had no weekly summary submitted for this week.",
+      "createdAt": "2026-04-02T17:53:22.708Z",
+      "readAt": null
+    },
+    {
+      "id": "mnhrwo44trzsw",
+      "userEmail": "stefano.mauri@nokia.com",
+      "type": "rollup-missing",
+      "title": "Team roll-up generated — no submission from you",
+      "message": "Deepalaxmi Hegde K generated the team roll-up for week of 2026-03-30. You had no weekly summary submitted for this week.",
+      "createdAt": "2026-04-02T17:53:22.708Z",
+      "readAt": null
+    },
+    {
+      "id": "mnhrwo44fk8nu",
+      "userEmail": "tejraj.choudhary@nokia.com",
+      "type": "rollup",
+      "title": "Your summary was included in the team roll-up",
+      "message": "Deepalaxmi Hegde K generated the team roll-up for week of 2026-03-30. Your weekly summary was included.",
+      "createdAt": "2026-04-02T17:53:22.708Z",
+      "readAt": null
+    },
+    {
+      "id": "mnhrwo449gfpf",
+      "userEmail": "yasaswini.vissa@nokia.com",
+      "type": "rollup-missing",
+      "title": "Team roll-up generated — no submission from you",
+      "message": "Deepalaxmi Hegde K generated the team roll-up for week of 2026-03-30. You had no weekly summary submitted for this week.",
+      "createdAt": "2026-04-02T17:53:22.708Z",
+      "readAt": null
+    },
+    {
+      "id": "mnhrwo44qd74l",
+      "userEmail": "deepalaxmi.hegde_k@nokia.com",
+      "type": "rollup-sent",
+      "title": "Team roll-up notifications sent",
+      "message": "Roll-up for week of 2026-03-30 sent to 27 recipient(s). Skipped 10 without email: Ambresh A, Amulya PS, Dileep N, Naveen Uppaluru, Priyanka 1. S, Radhika H, Shreyash Sahu, Sindhu Murugesan, Sneha 2. Sneha, Vagish Gupta.",
+      "createdAt": "2026-04-02T17:53:22.708Z",
+      "readAt": null
+    },
+    {
+      "id": "mnhryvkwb1dwe",
+      "userEmail": "ajay.balakrishnan@nokia.com",
+      "type": "rollup-missing",
+      "title": "Team roll-up generated — no submission from you",
+      "message": "Deepalaxmi Hegde K generated the team roll-up for week of 2026-04-06. You had no weekly summary submitted for this week.",
+      "createdAt": "2026-04-02T17:55:05.696Z",
+      "readAt": null
+    },
+    {
+      "id": "mnhryvkw6kvtm",
+      "userEmail": "anuj.kumar@nokia.com",
+      "type": "rollup-missing",
+      "title": "Team roll-up generated — no submission from you",
+      "message": "Deepalaxmi Hegde K generated the team roll-up for week of 2026-04-06. You had no weekly summary submitted for this week.",
+      "createdAt": "2026-04-02T17:55:05.696Z",
+      "readAt": null
+    },
+    {
+      "id": "mnhryvkwlm19v",
+      "userEmail": "biswabhusan.mishra@nokia.com",
+      "type": "rollup-missing",
+      "title": "Team roll-up generated — no submission from you",
+      "message": "Deepalaxmi Hegde K generated the team roll-up for week of 2026-04-06. You had no weekly summary submitted for this week.",
+      "createdAt": "2026-04-02T17:55:05.696Z",
+      "readAt": null
+    },
+    {
+      "id": "mnhryvkxmm6gx",
+      "userEmail": "chamarthi.dedeepya@nokia.com",
+      "type": "rollup-missing",
+      "title": "Team roll-up generated — no submission from you",
+      "message": "Deepalaxmi Hegde K generated the team roll-up for week of 2026-04-06. You had no weekly summary submitted for this week.",
+      "createdAt": "2026-04-02T17:55:05.696Z",
+      "readAt": null
+    },
+    {
+      "id": "mnhryvkxhl5gq",
+      "userEmail": "cheruvu.tejaswini@nokia.com",
+      "type": "rollup-missing",
+      "title": "Team roll-up generated — no submission from you",
+      "message": "Deepalaxmi Hegde K generated the team roll-up for week of 2026-04-06. You had no weekly summary submitted for this week.",
+      "createdAt": "2026-04-02T17:55:05.696Z",
+      "readAt": null
+    },
+    {
+      "id": "mnhryvkxcg82a",
+      "userEmail": "deepak.n@nokia.com",
+      "type": "rollup-missing",
+      "title": "Team roll-up generated — no submission from you",
+      "message": "Deepalaxmi Hegde K generated the team roll-up for week of 2026-04-06. You had no weekly summary submitted for this week.",
+      "createdAt": "2026-04-02T17:55:05.696Z",
+      "readAt": null
+    },
+    {
+      "id": "mnhryvkx7g1lt",
+      "userEmail": "deepak.2.n@nokia.com",
+      "type": "rollup-missing",
+      "title": "Team roll-up generated — no submission from you",
+      "message": "Deepalaxmi Hegde K generated the team roll-up for week of 2026-04-06. You had no weekly summary submitted for this week.",
+      "createdAt": "2026-04-02T17:55:05.696Z",
+      "readAt": null
+    },
+    {
+      "id": "mnhryvkx1aabr",
+      "userEmail": "dhanush.n@nokia.com",
+      "type": "rollup-missing",
+      "title": "Team roll-up generated — no submission from you",
+      "message": "Deepalaxmi Hegde K generated the team roll-up for week of 2026-04-06. You had no weekly summary submitted for this week.",
+      "createdAt": "2026-04-02T17:55:05.696Z",
+      "readAt": null
+    },
+    {
+      "id": "mnhryvkxj2vp3",
+      "userEmail": "eliza.priyadarshinee@nokia.com",
+      "type": "rollup-missing",
+      "title": "Team roll-up generated — no submission from you",
+      "message": "Deepalaxmi Hegde K generated the team roll-up for week of 2026-04-06. You had no weekly summary submitted for this week.",
+      "createdAt": "2026-04-02T17:55:05.696Z",
+      "readAt": null
+    },
+    {
+      "id": "mnhryvkx9v9in",
+      "userEmail": "kavya.1.m@nokia.com",
+      "type": "rollup-missing",
+      "title": "Team roll-up generated — no submission from you",
+      "message": "Deepalaxmi Hegde K generated the team roll-up for week of 2026-04-06. You had no weekly summary submitted for this week.",
+      "createdAt": "2026-04-02T17:55:05.696Z",
+      "readAt": null
+    },
+    {
+      "id": "mnhryvkxq07is",
+      "userEmail": "kiran.mohan_e@nokia.com",
+      "type": "rollup-missing",
+      "title": "Team roll-up generated — no submission from you",
+      "message": "Deepalaxmi Hegde K generated the team roll-up for week of 2026-04-06. You had no weekly summary submitted for this week.",
+      "createdAt": "2026-04-02T17:55:05.696Z",
+      "readAt": null
+    },
+    {
+      "id": "mnhryvkxqtxtl",
+      "userEmail": "krishnama_bala.srinivas_prabhu@nokia.com",
+      "type": "rollup-missing",
+      "title": "Team roll-up generated — no submission from you",
+      "message": "Deepalaxmi Hegde K generated the team roll-up for week of 2026-04-06. You had no weekly summary submitted for this week.",
+      "createdAt": "2026-04-02T17:55:05.696Z",
+      "readAt": null
+    },
+    {
+      "id": "mnhryvkxhow8v",
+      "userEmail": "mohammed.mizfar_n@nokia.com",
+      "type": "rollup-missing",
+      "title": "Team roll-up generated — no submission from you",
+      "message": "Deepalaxmi Hegde K generated the team roll-up for week of 2026-04-06. You had no weekly summary submitted for this week.",
+      "createdAt": "2026-04-02T17:55:05.696Z",
+      "readAt": null
+    },
+    {
+      "id": "mnhryvkx8ksys",
+      "userEmail": "nidhi.balachandra_bhat@nokia.com",
+      "type": "rollup-missing",
+      "title": "Team roll-up generated — no submission from you",
+      "message": "Deepalaxmi Hegde K generated the team roll-up for week of 2026-04-06. You had no weekly summary submitted for this week.",
+      "createdAt": "2026-04-02T17:55:05.696Z",
+      "readAt": null
+    },
+    {
+      "id": "mnhryvkx7xzhj",
+      "userEmail": "prabhulinga.prabhulinga@nokia.com",
+      "type": "rollup-missing",
+      "title": "Team roll-up generated — no submission from you",
+      "message": "Deepalaxmi Hegde K generated the team roll-up for week of 2026-04-06. You had no weekly summary submitted for this week.",
+      "createdAt": "2026-04-02T17:55:05.696Z",
+      "readAt": null
+    },
+    {
+      "id": "mnhryvkxh5scc",
+      "userEmail": "pramod.haviruth@nokia.com",
+      "type": "rollup-missing",
+      "title": "Team roll-up generated — no submission from you",
+      "message": "Deepalaxmi Hegde K generated the team roll-up for week of 2026-04-06. You had no weekly summary submitted for this week.",
+      "createdAt": "2026-04-02T17:55:05.696Z",
+      "readAt": null
+    },
+    {
+      "id": "mnhryvkxjjcuh",
+      "userEmail": "priya.s_m@nokia.com",
+      "type": "rollup-missing",
+      "title": "Team roll-up generated — no submission from you",
+      "message": "Deepalaxmi Hegde K generated the team roll-up for week of 2026-04-06. You had no weekly summary submitted for this week.",
+      "createdAt": "2026-04-02T17:55:05.696Z",
+      "readAt": null
+    },
+    {
+      "id": "mnhryvkx7mrx0",
+      "userEmail": "puneeth.g_l@nokia.com",
+      "type": "rollup-missing",
+      "title": "Team roll-up generated — no submission from you",
+      "message": "Deepalaxmi Hegde K generated the team roll-up for week of 2026-04-06. You had no weekly summary submitted for this week.",
+      "createdAt": "2026-04-02T17:55:05.696Z",
+      "readAt": null
+    },
+    {
+      "id": "mnhryvkx51i3t",
+      "userEmail": "rajneesh.yadav@nokia.com",
+      "type": "rollup-missing",
+      "title": "Team roll-up generated — no submission from you",
+      "message": "Deepalaxmi Hegde K generated the team roll-up for week of 2026-04-06. You had no weekly summary submitted for this week.",
+      "createdAt": "2026-04-02T17:55:05.696Z",
+      "readAt": null
+    },
+    {
+      "id": "mnhryvkxzm504",
+      "userEmail": "ravi.prasad@nokia.com",
+      "type": "rollup-missing",
+      "title": "Team roll-up generated — no submission from you",
+      "message": "Deepalaxmi Hegde K generated the team roll-up for week of 2026-04-06. You had no weekly summary submitted for this week.",
+      "createdAt": "2026-04-02T17:55:05.696Z",
+      "readAt": null
+    },
+    {
+      "id": "mnhryvkxu9a6n",
+      "userEmail": "richi.mathur@nokia.com",
+      "type": "rollup-missing",
+      "title": "Team roll-up generated — no submission from you",
+      "message": "Deepalaxmi Hegde K generated the team roll-up for week of 2026-04-06. You had no weekly summary submitted for this week.",
+      "createdAt": "2026-04-02T17:55:05.696Z",
+      "readAt": null
+    },
+    {
+      "id": "mnhryvkx4nv5k",
+      "userEmail": "s.komathy@nokia.com",
+      "type": "rollup-missing",
+      "title": "Team roll-up generated — no submission from you",
+      "message": "Deepalaxmi Hegde K generated the team roll-up for week of 2026-04-06. You had no weekly summary submitted for this week.",
+      "createdAt": "2026-04-02T17:55:05.696Z",
+      "readAt": null
+    },
+    {
+      "id": "mnhryvkxx4e1d",
+      "userEmail": "sainath.nair@nokia.com",
+      "type": "rollup-missing",
+      "title": "Team roll-up generated — no submission from you",
+      "message": "Deepalaxmi Hegde K generated the team roll-up for week of 2026-04-06. You had no weekly summary submitted for this week.",
+      "createdAt": "2026-04-02T17:55:05.696Z",
+      "readAt": null
+    },
+    {
+      "id": "mnhryvkxxrg1a",
+      "userEmail": "stefano.mauri@nokia.com",
+      "type": "rollup-missing",
+      "title": "Team roll-up generated — no submission from you",
+      "message": "Deepalaxmi Hegde K generated the team roll-up for week of 2026-04-06. You had no weekly summary submitted for this week.",
+      "createdAt": "2026-04-02T17:55:05.696Z",
+      "readAt": null
+    },
+    {
+      "id": "mnhryvkx1uo89",
+      "userEmail": "tejraj.choudhary@nokia.com",
+      "type": "rollup-missing",
+      "title": "Team roll-up generated — no submission from you",
+      "message": "Deepalaxmi Hegde K generated the team roll-up for week of 2026-04-06. You had no weekly summary submitted for this week.",
+      "createdAt": "2026-04-02T17:55:05.696Z",
+      "readAt": null
+    },
+    {
+      "id": "mnhryvkx72hnk",
+      "userEmail": "yasaswini.vissa@nokia.com",
+      "type": "rollup-missing",
+      "title": "Team roll-up generated — no submission from you",
+      "message": "Deepalaxmi Hegde K generated the team roll-up for week of 2026-04-06. You had no weekly summary submitted for this week.",
+      "createdAt": "2026-04-02T17:55:05.696Z",
+      "readAt": null
+    },
+    {
+      "id": "mnhryvkxxofwm",
+      "userEmail": "deepalaxmi.hegde_k@nokia.com",
+      "type": "rollup-sent",
+      "title": "Team roll-up notifications sent",
+      "message": "Roll-up for week of 2026-04-06 sent to 26 recipient(s). Skipped 11 without email: Ambresh A, Amulya PS, Dileep N, Jayamani T, Naveen Uppaluru, Priyanka 1. S, Radhika H, Shreyash Sahu, Sindhu Murugesan, Sneha 2. Sneha, Vagish Gupta.",
+      "createdAt": "2026-04-02T17:55:05.696Z",
+      "readAt": null
+    }
+  ]
+}

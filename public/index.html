@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Personal Productivity Dashboard</title>
+  <link rel="stylesheet" href="/styles.css" />
+  <script>
+    (function () {
+      try {
+        var t = localStorage.getItem("dashboard.theme");
+        if (t === "dark" || t === "light") document.documentElement.setAttribute("data-theme", t);
+      } catch (_) {}
+    })();
+  </script>
+</head>
+<body>
+  <div class="app-layout">
+    <aside class="sidebar">
+      <div class="sidebar-brand">
+        <span class="sidebar-logo" aria-hidden="true">◇</span>
+        <span class="sidebar-title">Dashboard</span>
+      </div>
+      <button id="logoutBtn" type="button" class="sidebar-item sidebar-logout">Log out</button>
+      <nav class="sidebar-nav" role="navigation" aria-label="Main" id="viewToggle">
+        <button type="button" id="personalModeBtn" class="sidebar-item active" aria-current="page">
+          <span class="sidebar-icon" aria-hidden="true">⌂</span>
+          <span>Personal</span>
+        </button>
+        <button type="button" id="managerModeBtn" class="sidebar-item">
+          <span class="sidebar-icon" aria-hidden="true">▤</span>
+          <span>Manager</span>
+        </button>
+        <div class="sidebar-divider"></div>
+        <a href="#" class="sidebar-item" id="sidebarQuickLinks" title="Quick links">
+          <span class="sidebar-icon" aria-hidden="true">⚑</span>
+          <span>Links</span>
+        </a>
+      </nav>
+    </aside>
+
+    <main class="main-content">
+      <header class="topbar">
+        <div class="topbar-left">
+          <h1 class="topbar-title">Personal Productivity Dashboard</h1>
+          <p class="sub auth-status" id="authStatus">User context not resolved yet.</p>
+        </div>
+        <div class="topbar-actions">
+          <button type="button" id="themeToggleBtn" class="theme-toggle-btn" title="Toggle dark/light theme" aria-label="Toggle theme">
+            <span class="theme-icon theme-icon-sun" aria-hidden="true">☀</span>
+            <span class="theme-icon theme-icon-moon" aria-hidden="true">☽</span>
+          </button>
+          <div class="topbar-date" id="todayDate" title="Today's date"></div>
+          <button type="button" id="notifBellBtn" class="notif-bell-btn" aria-label="Notifications" title="Notifications">
+            <span class="notif-bell-icon" aria-hidden="true">&#128276;</span>
+            <span class="notif-badge hidden" id="notifBadge" aria-label="Unread notifications">0</span>
+          </button>
+          <span class="user-badge" id="userBadge" aria-label="Logged-in user"></span>
+        </div>
+      </header>
+
+      <section class="profile-strip card" id="profileStrip">
+        <div class="profile-strip-content">
+          <div class="profile-avatar" id="profileAvatar" aria-hidden="true">?</div>
+          <div class="profile-info">
+            <h2 class="profile-name" id="profileName">—</h2>
+            <p class="profile-role" id="profileRole">Sign in to see your role</p>
+            <p class="profile-tagline" id="profileTagline">Tasks, Jira, and weekly summaries in one place.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="dashboard-kpi-row" id="dashboardKpiRow">
+        <article class="kpi-card card" data-view="personal">
+          <div class="kpi-icon" aria-hidden="true">◐</div>
+          <div class="kpi-label">In Progress</div>
+          <div class="kpi-value" id="kpiCardInProgress">0</div>
+        </article>
+        <article class="kpi-card card" data-view="personal">
+          <div class="kpi-icon" aria-hidden="true">✓</div>
+          <div class="kpi-label">Done</div>
+          <div class="kpi-value" id="kpiCardDone">0</div>
+        </article>
+        <article class="kpi-card card" data-view="personal">
+          <div class="kpi-icon" aria-hidden="true">!</div>
+          <div class="kpi-label">Overdue</div>
+          <div class="kpi-value kpi-warn" id="kpiCardOverdue">0</div>
+        </article>
+        <article class="kpi-card card" data-view="personal">
+          <div class="kpi-icon" aria-hidden="true">#</div>
+          <div class="kpi-label">Total</div>
+          <div class="kpi-value" id="kpiCardTotal">0</div>
+        </article>
+        <article class="kpi-card card" data-view="manager">
+          <div class="kpi-icon" aria-hidden="true">◐</div>
+          <div class="kpi-label">Team In Progress</div>
+          <div class="kpi-value" id="kpiCardTeamInProgress">—</div>
+        </article>
+        <article class="kpi-card card" data-view="manager">
+          <div class="kpi-icon" aria-hidden="true">✓</div>
+          <div class="kpi-label">Team Done</div>
+          <div class="kpi-value" id="kpiCardTeamDone">—</div>
+        </article>
+        <article class="kpi-card card" data-view="manager">
+          <div class="kpi-icon" aria-hidden="true">!</div>
+          <div class="kpi-label">Team Overdue</div>
+          <div class="kpi-value kpi-warn" id="kpiCardTeamOverdue">—</div>
+        </article>
+        <article class="kpi-card card" data-view="manager">
+          <div class="kpi-icon" aria-hidden="true">#</div>
+          <div class="kpi-label">Total Projects</div>
+          <div class="kpi-value" id="kpiCardTeamTotal">—</div>
+        </article>
+      </section>
+
+      <div class="content-columns">
+        <div class="column-left">
+          <article class="card work-progress-card" data-view="personal">
+            <div class="card-head card-head-flex">
+              <h2>Our work progress for today</h2>
+              <span class="chip" id="taskProgress">0% done</span>
+            </div>
+            <ul class="task-list task-list-progress" id="taskList"></ul>
+            <div class="task-actions">
+              <button id="resetTasksBtn" type="button">Reset tasks</button>
+            </div>
+          </article>
+
+          <article class="card notes-card" data-view="personal">
+            <div class="card-head">
+              <h2>Notes</h2>
+              <span class="chip">Quick Capture</span>
+            </div>
+            <textarea id="notes" placeholder="Quick thoughts, reminders, commands..."></textarea>
+            <div class="task-actions">
+              <button type="button" id="notesSuggestCalendarBtn" class="btn-secondary">Suggest from calendar</button>
+            </div>
+          </article>
+
+          <article class="card calendar-card" data-view="shared">
+            <div class="card-head">
+              <h2>Calendar</h2>
+              <div class="calendar-nav">
+                <button type="button" id="calendarPrevMonth" class="calendar-nav-btn" aria-label="Previous month">&larr;</button>
+                <span class="chip" id="monthLabel">Month</span>
+                <button type="button" id="calendarNextMonth" class="calendar-nav-btn" aria-label="Next month">&rarr;</button>
+                <button type="button" id="calendarToday" class="calendar-today-btn">Today</button>
+              </div>
+            </div>
+            <p class="sub calendar-hint">Click a day to add or edit a note.</p>
+            <div class="calendar-weekdays">
+              <span>Mon</span><span>Tue</span><span>Wed</span><span>Thu</span><span>Fri</span><span>Sat</span><span>Sun</span>
+            </div>
+            <div class="calendar-grid" id="calendarGrid"></div>
+          </article>
+
+          <article class="card perf-kpi-card" data-view="personal">
+            <div class="card-head">
+              <h2>Performance Overview</h2>
+              <span class="chip" id="perfScoreChip">Score --</span>
+            </div>
+            <div class="perf-kpi-grid">
+              <div class="status"><div class="status-title">Productivity</div><div class="status-value" id="kpiProductivity">--</div></div>
+              <div class="status"><div class="status-title">Attendance</div><div class="status-value" id="kpiAttendance">--</div></div>
+              <div class="status"><div class="status-title">Task Completion</div><div class="status-value" id="kpiCompletion">--</div></div>
+              <div class="status"><div class="status-title">Engagement</div><div class="status-value" id="kpiEngagement">--</div></div>
+              <div class="status"><div class="status-title">Utilization</div><div class="status-value" id="kpiUtilization">--</div></div>
+              <div class="status"><div class="status-title">Tracked Time</div><div class="status-value" id="kpiTracked">--</div></div>
+            </div>
+          </article>
+
+          <article class="card perf-input-card" data-view="personal">
+            <div class="card-head">
+              <h2>Daily Inputs</h2>
+              <span class="chip">Manual Update</span>
+            </div>
+            <div class="perf-input-grid">
+              <label class="perf-field">Attendance %
+                <input type="number" id="inputAttendance" min="0" max="100" />
+              </label>
+              <label class="perf-field">Engagement %
+                <input type="number" id="inputEngagement" min="0" max="100" />
+              </label>
+              <label class="perf-field">Tracked Hours
+                <input type="number" id="inputTrackedHours" min="0" max="24" step="0.1" />
+              </label>
+              <label class="perf-field">Planned Hours
+                <input type="number" id="inputPlannedHours" min="1" max="24" step="0.1" />
+              </label>
+            </div>
+            <div class="task-actions">
+              <button id="savePerfBtn" type="button">Save Inputs</button>
+            </div>
+          </article>
+
+          <article class="card weekly-summary-card" data-view="personal">
+            <div class="card-head">
+              <h2>Weekly Summary</h2>
+              <span class="chip" id="weeklySummaryWeekLabel">Week</span>
+            </div>
+            <p class="sub" id="weeklySummaryHint">Submit what you did this week. Your manager sees it under Team weekly summaries.</p>
+            <textarea id="weeklySummaryText" placeholder="What did you accomplish this week? Key deliverables, blockers, next week focus..." rows="5"></textarea>
+            <div class="task-actions">
+              <button id="weeklySummaryTemplateBtn" type="button" class="btn-secondary">Use template</button>
+              <button id="weeklySummarySuggestJiraBtn" type="button" class="btn-secondary">Suggest from Jira</button>
+              <button id="weeklySummarySubmitBtn" type="button">Submit</button>
+            </div>
+            <p class="sub" id="weeklySummaryStatus"></p>
+          </article>
+
+          <article class="card manager-summary-card" data-view="manager">
+            <div class="card-head">
+              <h2>Team Summary</h2>
+              <div class="manager-controls">
+                <select id="managerSelect" aria-label="Select manager"></select>
+                <button id="refreshTeamBtn" type="button">Refresh Team</button>
+              </div>
+            </div>
+            <p class="sub" id="teamStatus">Switch to Manager mode to load team progress.</p>
+            <div class="perf-kpi-grid">
+              <div class="status"><div class="status-title">Open</div><div class="status-value" id="teamOpenCount">--</div></div>
+              <div class="status"><div class="status-title">Bugs</div><div class="status-value bad" id="teamBugCount">--</div></div>
+              <div class="status"><div class="status-title">In Progress</div><div class="status-value" id="teamInProgressCount">--</div></div>
+              <div class="status"><div class="status-title">Blocked</div><div class="status-value bad" id="teamBlockedCount">--</div></div>
+              <div class="status"><div class="status-title">Overdue</div><div class="status-value warn" id="teamOverdueCount">--</div></div>
+              <div class="status"><div class="status-title">Done</div><div class="status-value ok" id="teamDoneCount">--</div></div>
+              <div class="status"><div class="status-title">Team Completion</div><div class="status-value" id="teamCompletionRate">--</div></div>
+              <div class="status"><div class="status-title">Opened This Week</div><div class="status-value" id="teamOpenedWeek">--</div></div>
+              <div class="status"><div class="status-title">Closed This Week</div><div class="status-value ok" id="teamClosedWeek">--</div></div>
+              <div class="status"><div class="status-title">Opened This Month</div><div class="status-value" id="teamOpenedMonth">--</div></div>
+              <div class="status"><div class="status-title">Closed This Month</div><div class="status-value ok" id="teamClosedMonth">--</div></div>
+              <div class="status"><div class="status-title">Health Score</div><div class="status-value" id="teamHealthScore">--</div></div>
+              <div class="status"><div class="status-title">Burnout Flags</div><div class="status-value warn" id="teamBurnoutFlags">--</div></div>
+            </div>
+          </article>
+
+          <article class="card manager-summary-card" data-view="manager">
+            <div class="card-head">
+              <h2>Delivery Insights</h2>
+              <span class="chip">Weekly + Monthly</span>
+            </div>
+            <div class="perf-kpi-grid">
+              <div class="status"><div class="status-title">Overdue 0-3d</div><div class="status-value" id="aging0to3">--</div></div>
+              <div class="status"><div class="status-title">Overdue 4-7d</div><div class="status-value" id="aging4to7">--</div></div>
+              <div class="status"><div class="status-title">Overdue 8-14d</div><div class="status-value warn" id="aging8to14">--</div></div>
+              <div class="status"><div class="status-title">Overdue 15+d</div><div class="status-value bad" id="aging15plus">--</div></div>
+              <div class="status"><div class="status-title">Unplanned Work %</div><div class="status-value" id="unplannedWorkPct">--</div></div>
+              <div class="status"><div class="status-title">Blocked Chains</div><div class="status-value bad" id="blockedChainsCount">--</div></div>
+              <div class="status"><div class="status-title">Milestone Warnings</div><div class="status-value warn" id="milestoneWarningsCount">--</div></div>
+              <div class="status"><div class="status-title">Attrition Risk</div><div class="status-value warn" id="attritionRiskCount">--</div></div>
+            </div>
+            <div class="focus-list" id="teamInsightsList"></div>
+          </article>
+
+          <article class="card manager-workload-card" data-view="manager">
+            <div class="card-head">
+              <h2>Workload By Assignee</h2>
+              <span class="chip">Top Queue</span>
+            </div>
+            <div class="focus-list" id="teamWorkloadList"></div>
+          </article>
+
+          <article class="card manager-risk-card" data-view="manager">
+            <div class="card-head">
+              <h2>Risk Alerts</h2>
+              <span class="chip">Manager View</span>
+            </div>
+            <div class="focus-list" id="teamRiskList"></div>
+          </article>
+
+          <article class="card manager-risk-card" data-view="manager">
+            <div class="card-head">
+              <h2>Blocker Queue</h2>
+              <button id="refreshManagerBlockersBtn" type="button">Refresh</button>
+            </div>
+            <p class="sub" id="managerBlockersStatus">Manager blocker queue is ready.</p>
+            <div class="focus-list" id="managerBlockersList"></div>
+          </article>
+
+          <article class="card manager-weekly-summaries-btn-card" data-view="manager">
+            <div class="card-head">
+              <h2>Team reports</h2>
+              <span class="chip">Weekly</span>
+            </div>
+            <p class="sub">View weekly summaries submitted by your reportees.</p>
+            <button type="button" id="weeklySummariesOpenBtn" class="weekly-summaries-open-btn">Weekly summaries <span id="weeklySummariesBadge" class="weekly-summaries-badge hidden" aria-label="Submitted count"></span></button>
+          </article>
+
+          <article class="card manager-bi-row-card" data-view="manager">
+            <div class="card-head">
+              <h2>Manager KPI Snapshot</h2>
+              <span class="chip">Power BI Style</span>
+            </div>
+            <div class="manager-kpi-row" id="managerKpiRow">
+              <div class="status"><div class="status-title">Completion</div><div class="status-value" id="managerCompletionKpi">--</div></div>
+              <div class="status"><div class="status-title">Attendance</div><div class="status-value" id="managerAttendanceKpi">--</div></div>
+              <div class="status"><div class="status-title">Productivity</div><div class="status-value" id="managerProductivityKpi">--</div></div>
+              <div class="status"><div class="status-title">Overdue</div><div class="status-value warn" id="managerOverdueKpi">--</div></div>
+              <div class="status"><div class="status-title">Risk Count</div><div class="status-value bad" id="managerRiskCountKpi">--</div></div>
+            </div>
+          </article>
+
+          <article class="card manager-trend-card" data-view="manager">
+            <div class="card-head">
+              <h2>7-Day Team Throughput</h2>
+              <span class="chip">Updated Issues</span>
+            </div>
+            <div class="trend-bars" id="teamTrendBars"></div>
+          </article>
+        </div>
+
+        <div class="column-right">
+      <article class="card quick-links-card" data-view="shared">
+        <div class="card-head">
+          <h2>Quick Links</h2>
+          <span class="chip">Daily Stack</span>
+        </div>
+        <div class="links" id="quickLinks"></div>
+      </article>
+
+      <article class="card sprint-window-card" data-view="shared">
+        <div class="card-head">
+          <h2>Sprint Window</h2>
+          <span class="chip sprint-days-chip" id="sprintDaysLeftChip">Not Set</span>
+        </div>
+        <div class="sprint-hero">
+          <p class="sub sprint-status-text" id="sprintWindowStatusText">Manager can set sprint start and end dates.</p>
+          <p class="sub sprint-range-text" id="sprintWindowRangeText">Sprint dates are not configured yet.</p>
+        </div>
+        <div class="sprint-progress-wrap" aria-label="Sprint progress">
+          <div class="sprint-progress-bar">
+            <div class="sprint-progress-fill" id="sprintProgressFill"></div>
+          </div>
+          <span class="sprint-progress-text" id="sprintProgressText">0% timeline elapsed</span>
+        </div>
+        <p class="sub sprint-updated-text" id="sprintWindowUpdatedText"></p>
+      </article>
+
+      <article class="card sprint-manager-card" data-view="manager">
+        <div class="card-head">
+          <h2>Set Sprint Dates</h2>
+          <span class="chip">Manager Only</span>
+        </div>
+        <div class="perf-input-grid">
+          <label class="perf-field">Sprint Start Date
+            <input type="date" id="sprintStartInput" />
+          </label>
+          <label class="perf-field">Sprint End Date
+            <input type="date" id="sprintEndInput" />
+          </label>
+        </div>
+        <div class="task-actions">
+          <button type="button" id="sprintSaveBtn">Save Sprint Dates</button>
+        </div>
+        <p class="sub" id="sprintManagerStatus"></p>
+      </article>
+
+      <article class="card jira-card" data-view="personal">
+        <div class="card-head">
+          <h2>Jira Tasks</h2>
+          <button id="refreshJiraBtn" type="button">Refresh</button>
+        </div>
+        <p class="sub" id="jiraStatus">Jira sync ready.</p>
+        <div class="jira-list" id="jiraList"></div>
+      </article>
+
+      <article class="card focus-card" data-view="personal">
+        <div class="card-head">
+          <h2>Daily Focus</h2>
+          <span class="chip">Auto Summary</span>
+        </div>
+        <div class="focus-list" id="focusList"></div>
+      </article>
+
+      <article class="card focus-card" data-view="personal">
+        <div class="card-head">
+          <h2>Streak Badges</h2>
+          <span class="chip">Employee</span>
+        </div>
+        <p class="sub" id="streakBadgesStatus">Loading your badge progress...</p>
+        <div class="focus-list" id="streakBadgesList"></div>
+      </article>
+
+      <article class="card perf-trend-card" data-view="personal">
+        <div class="card-head">
+          <h2>7-Day Trend</h2>
+          <span class="chip">Rolling</span>
+        </div>
+        <div class="trend-bars" id="trendBars"></div>
+      </article>
+
+      <article class="card perf-alert-card" data-view="personal">
+        <div class="card-head">
+          <h2>Bottlenecks & Alerts</h2>
+          <span class="chip">Actionable</span>
+        </div>
+        <div class="focus-list" id="alertList"></div>
+      </article>
+
+          <article class="card perf-alert-card" data-view="personal">
+            <div class="card-head">
+              <h2>Help / Unblock Me</h2>
+              <span class="chip">Need Help</span>
+            </div>
+            <div class="perf-input-grid">
+              <label class="perf-field">Blocker Type
+                <select id="helpType">
+                  <option value="technical">Technical blocker</option>
+                  <option value="dependency">Dependency blocker</option>
+                  <option value="access">Access issue</option>
+                  <option value="requirement">Requirement unclear</option>
+                  <option value="environment">Environment issue</option>
+                </select>
+              </label>
+              <label class="perf-field">Impact
+                <select id="helpImpact">
+                  <option value="low">Low</option>
+                  <option value="medium" selected>Medium</option>
+                  <option value="high">High</option>
+                </select>
+              </label>
+              <label class="perf-field">Waiting Owner
+                <input type="text" id="helpOwner" placeholder="Name / team" />
+              </label>
+              <label class="perf-field">Blocked Since
+                <input type="date" id="helpSince" />
+              </label>
+            </div>
+            <textarea id="helpDetails" rows="3" placeholder="What is blocked? What have you tried?"></textarea>
+            <div class="task-actions">
+              <button id="helpSubmitBtn" type="button">I am Blocked</button>
+            </div>
+            <p class="sub" id="helpStatus"></p>
+            <div class="focus-list" id="helpRequestsList"></div>
+          </article>
+        </div>
+      </div>
+
+      <div id="calendarNoteModal" class="calendar-note-modal" role="dialog" aria-labelledby="calendarNoteDate" aria-modal="true" aria-hidden="true">
+        <div class="calendar-note-modal-content card">
+          <div class="card-head">
+            <h3 id="calendarNoteDate">Date</h3>
+            <button type="button" id="calendarNoteClose" class="calendar-note-close" aria-label="Close">&times;</button>
+          </div>
+          <textarea id="calendarNoteText" placeholder="Add a note for this day..." rows="4"></textarea>
+          <div class="calendar-note-actions">
+            <button type="button" id="calendarNoteAddMeetingsBtn" class="btn-secondary">Add from meetings</button>
+            <button type="button" id="calendarNoteSave" class="btn-primary">Save note</button>
+          </div>
+        </div>
+      </div>
+
+      <div id="weeklySummariesModal" class="calendar-note-modal weekly-summaries-modal" role="dialog" aria-labelledby="weeklySummariesModalTitle" aria-modal="true" aria-hidden="true">
+        <div class="calendar-note-modal-content card weekly-summaries-modal-content">
+          <div class="card-head">
+            <h3 id="weeklySummariesModalTitle">Team weekly summaries</h3>
+            <button type="button" id="weeklySummariesModalClose" class="calendar-note-close" aria-label="Close">&times;</button>
+          </div>
+          <div class="manager-controls weekly-summaries-nav">
+            <button type="button" id="weeklySummariesPrevWeek" class="calendar-nav-btn" aria-label="Previous week">&larr;</button>
+            <span class="chip" id="weeklySummariesWeekLabel">Week</span>
+            <button type="button" id="weeklySummariesNextWeek" class="calendar-nav-btn" aria-label="Next week">&rarr;</button>
+            <button type="button" id="weeklySummariesRefreshBtn">Refresh</button>
+          </div>
+          <div class="weekly-summaries-manager-actions">
+            <button type="button" id="weeklySummariesRemindBtn" class="btn-secondary">Who hasn't submitted</button>
+            <button type="button" id="weeklySummariesRollupBtn" class="btn-secondary">Roll-up summary</button>
+            <button type="button" id="weeklySummariesExportBtn" class="btn-secondary">Export team week</button>
+          </div>
+          <p class="sub muted hidden" id="weeklySummariesRemindList"></p>
+          <div class="rollup-panel hidden" id="weeklySummariesRollupPanel"></div>
+          <p class="sub" id="weeklySummariesStatus">Load reportees’ summaries for the selected week.</p>
+          <div class="focus-list weekly-summaries-list-wrap" id="weeklySummariesList"></div>
+        </div>
+      </div>
+      <!-- Notification dropdown -->
+      <div id="notifDropdown" class="notif-dropdown hidden" role="dialog" aria-label="Notifications" aria-modal="false">
+        <div class="notif-dropdown-head">
+          <strong>Notifications</strong>
+          <button type="button" id="notifMarkAllReadBtn" class="btn-secondary notif-mark-all-btn">Mark all read</button>
+          <button type="button" id="notifCloseBtn" class="calendar-note-close" aria-label="Close">&times;</button>
+        </div>
+        <div class="notif-list" id="notifList">
+          <p class="notif-empty muted">No notifications.</p>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <script src="/app.js"></script>
+</body>
+</html>

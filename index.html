@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Personal Productivity Dashboard</title>
+  <link rel="stylesheet" href="./public/styles.css" />
+</head>
+<body>
+  <main class="board-wrap">
+    <header class="topbar card">
+      <div>
+        <p class="eyebrow">My Workspace</p>
+        <h1>Personal Productivity Dashboard</h1>
+      </div>
+      <div class="topbar-actions">
+        <div class="user-controls">
+          <input id="userEmailInput" type="email" placeholder="work-email@company.com" aria-label="Work email" />
+          <button id="applyUserBtn" type="button">Apply User</button>
+        </div>
+        <div class="view-toggle" role="group" aria-label="Dashboard mode">
+          <button id="personalModeBtn" class="mode-btn active" type="button">Personal</button>
+          <button id="managerModeBtn" class="mode-btn" type="button">Manager</button>
+        </div>
+        <div class="today-pill" id="todayDate"></div>
+      </div>
+    </header>
+
+    <p class="sub auth-status" id="authStatus">User context not resolved yet.</p>
+
+    <section class="board-grid">
+      <article class="card quick-links-card" data-view="shared">
+        <div class="card-head">
+          <h2>Quick Links</h2>
+          <span class="chip">Daily Stack</span>
+        </div>
+        <div class="links" id="quickLinks"></div>
+      </article>
+
+
+      <article class="card tasks-card" data-view="personal">
+        <div class="card-head">
+          <h2>Today's Tasks</h2>
+          <span class="chip" id="taskProgress">0% done</span>
+        </div>
+        <ul class="task-list" id="taskList"></ul>
+        <div class="task-actions">
+          <button id="resetTasksBtn" type="button">Reset tasks</button>
+        </div>
+      </article>
+
+      <article class="card notes-card" data-view="personal">
+        <div class="card-head">
+          <h2>Notes</h2>
+          <span class="chip">Quick Capture</span>
+        </div>
+        <textarea id="notes" placeholder="Quick thoughts, reminders, commands..."></textarea>
+      </article>
+
+      <article class="card calendar-card" data-view="shared">
+        <div class="card-head">
+          <h2>Calendar</h2>
+          <span class="chip" id="monthLabel">Month</span>
+        </div>
+        <div class="calendar-weekdays">
+          <span>Mon</span><span>Tue</span><span>Wed</span><span>Thu</span><span>Fri</span><span>Sat</span><span>Sun</span>
+        </div>
+        <div class="calendar-grid" id="calendarGrid"></div>
+      </article>
+
+      <article class="card jira-card" data-view="personal">
+        <div class="card-head">
+          <h2>Jira Tasks</h2>
+          <button id="refreshJiraBtn" type="button">Refresh</button>
+        </div>
+        <p class="sub" id="jiraStatus">Jira sync ready.</p>
+        <div class="jira-list" id="jiraList"></div>
+      </article>
+
+      <article class="card focus-card" data-view="personal">
+        <div class="card-head">
+          <h2>Daily Focus</h2>
+          <span class="chip">Auto Summary</span>
+        </div>
+        <div class="focus-list" id="focusList"></div>
+      </article>
+
+      <article class="card perf-kpi-card" data-view="personal">
+        <div class="card-head">
+          <h2>Performance Overview</h2>
+          <span class="chip" id="perfScoreChip">Score --</span>
+        </div>
+        <div class="perf-kpi-grid">
+          <div class="status"><div class="status-title">Productivity</div><div class="status-value" id="kpiProductivity">--</div></div>
+          <div class="status"><div class="status-title">Attendance</div><div class="status-value" id="kpiAttendance">--</div></div>
+          <div class="status"><div class="status-title">Task Completion</div><div class="status-value" id="kpiCompletion">--</div></div>
+          <div class="status"><div class="status-title">Engagement</div><div class="status-value" id="kpiEngagement">--</div></div>
+          <div class="status"><div class="status-title">Utilization</div><div class="status-value" id="kpiUtilization">--</div></div>
+          <div class="status"><div class="status-title">Tracked Time</div><div class="status-value" id="kpiTracked">--</div></div>
+        </div>
+      </article>
+
+      <article class="card perf-trend-card" data-view="personal">
+        <div class="card-head">
+          <h2>7-Day Trend</h2>
+          <span class="chip">Rolling</span>
+        </div>
+        <div class="trend-bars" id="trendBars"></div>
+      </article>
+
+      <article class="card perf-input-card" data-view="personal">
+        <div class="card-head">
+          <h2>Daily Inputs</h2>
+          <span class="chip">Manual Update</span>
+        </div>
+        <div class="perf-input-grid">
+          <label class="perf-field">Attendance %
+            <input type="number" id="inputAttendance" min="0" max="100" />
+          </label>
+          <label class="perf-field">Engagement %
+            <input type="number" id="inputEngagement" min="0" max="100" />
+          </label>
+          <label class="perf-field">Tracked Hours
+            <input type="number" id="inputTrackedHours" min="0" max="24" step="0.1" />
+          </label>
+          <label class="perf-field">Planned Hours
+            <input type="number" id="inputPlannedHours" min="1" max="24" step="0.1" />
+          </label>
+        </div>
+        <div class="task-actions">
+          <button id="savePerfBtn" type="button">Save Inputs</button>
+        </div>
+      </article>
+
+      <article class="card perf-alert-card" data-view="personal">
+        <div class="card-head">
+          <h2>Bottlenecks & Alerts</h2>
+          <span class="chip">Actionable</span>
+        </div>
+        <div class="focus-list" id="alertList"></div>
+      </article>
+
+      <article class="card manager-bi-row-card" data-view="manager">
+        <div class="card-head">
+          <h2>Manager KPI Snapshot</h2>
+          <span class="chip">Power BI Style</span>
+        </div>
+        <div class="manager-kpi-row" id="managerKpiRow">
+          <div class="status"><div class="status-title">Completion</div><div class="status-value" id="managerCompletionKpi">--</div></div>
+          <div class="status"><div class="status-title">Attendance</div><div class="status-value" id="managerAttendanceKpi">--</div></div>
+          <div class="status"><div class="status-title">Productivity</div><div class="status-value" id="managerProductivityKpi">--</div></div>
+          <div class="status"><div class="status-title">Overdue</div><div class="status-value warn" id="managerOverdueKpi">--</div></div>
+          <div class="status"><div class="status-title">Risk Count</div><div class="status-value bad" id="managerRiskCountKpi">--</div></div>
+        </div>
+      </article>
+
+      <article class="card manager-summary-card" data-view="manager">
+        <div class="card-head">
+          <h2>Team Summary</h2>
+          <div class="manager-controls">
+            <select id="managerSelect" aria-label="Select manager"></select>
+            <button id="refreshTeamBtn" type="button">Refresh Team</button>
+          </div>
+        </div>
+        <p class="sub" id="teamStatus">Switch to Manager mode to load team progress.</p>
+        <div class="perf-kpi-grid">
+          <div class="status"><div class="status-title">Open</div><div class="status-value" id="teamOpenCount">--</div></div>
+          <div class="status"><div class="status-title">In Progress</div><div class="status-value" id="teamInProgressCount">--</div></div>
+          <div class="status"><div class="status-title">Blocked</div><div class="status-value bad" id="teamBlockedCount">--</div></div>
+          <div class="status"><div class="status-title">Overdue</div><div class="status-value warn" id="teamOverdueCount">--</div></div>
+          <div class="status"><div class="status-title">Done</div><div class="status-value ok" id="teamDoneCount">--</div></div>
+          <div class="status"><div class="status-title">Team Completion</div><div class="status-value" id="teamCompletionRate">--</div></div>
+        </div>
+      </article>
+
+      <article class="card manager-workload-card" data-view="manager">
+        <div class="card-head">
+          <h2>Workload By Assignee</h2>
+          <span class="chip">Top Queue</span>
+        </div>
+        <div class="focus-list" id="teamWorkloadList"></div>
+      </article>
+
+      <article class="card manager-risk-card" data-view="manager">
+        <div class="card-head">
+          <h2>Risk Alerts</h2>
+          <span class="chip">Manager View</span>
+        </div>
+        <div class="focus-list" id="teamRiskList"></div>
+      </article>
+
+      <article class="card manager-trend-card" data-view="manager">
+        <div class="card-head">
+          <h2>7-Day Team Throughput</h2>
+          <span class="chip">Updated Issues</span>
+        </div>
+        <div class="trend-bars" id="teamTrendBars"></div>
+      </article>
+    </section>
+  </main>
+
+  <script src="./public/app.js"></script>
+</body>
+</html>
+

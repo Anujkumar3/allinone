@@ -1,0 +1,44 @@
+{
+  "summaries": [
+    {
+      "weekKey": "2026-03-30",
+      "userEmail": "anuj.kumar@nokia.com",
+      "userName": "Anuj Kumar",
+      "managerId": "deepalaxmi-hegde-k",
+      "summaryText": "This week I worked on:\n- WS-1258557: WSO: Internal terms and code details are exposed on job page run history and GUI screens\n- WS-1589415: Update fonts, jpeg, svg and png icons, read via URL from resources to avoid CSP issues\n- WS-1763980: WSO:SS:Enhancement Request: Add OTS Details also in Defragmentation Steps – View Details Section\n- WS-1753248: WSO_SVT_LO_UI:Grid footer Pagination arrow is not working as expected in LO screens\n- WS-1529723: WSO_SVT_LO_UI:Grid footer Pagination arrow is not working as expected in LO screens\n- WS-1160252: WSO-Reduce screen white space",
+      "submittedAt": "2026-04-01T09:47:24.773Z"
+    },
+    {
+      "weekKey": "2026-03-30",
+      "userEmail": "deepak.2.n@nokia.com",
+      "userName": "deepak.2.n@nokia.com",
+      "managerId": "",
+      "summaryText": "This week I worked on:\n- WS-1773234: WSO -C3p0 update to /opt/c3p0/0.12.0/lib/\n- WS-1773950: UT\n- WS-1772241: Implement DAO layer changes in wso\n- WS-1768851: WSO and GPC merge 26.6.0\n- WS-1756748: Artifactory Migration from Espoo2 to On-Prem for Netconf-GPC\n- WS-1756746: Artifactory Migration from Espoo2 to On-Prem for WSO\n- WS-1698760: Adding Export Button in NHI Tab\n- WS-1708772: Adding of Preferance Attributes\n- WS-1675306: Operation to include files in JACOCO Report",
+      "submittedAt": "2026-04-01T10:25:32.122Z"
+    },
+    {
+      "weekKey": "2026-03-30",
+      "userEmail": "jayamani.t.ext@nokia.com",
+      "userName": "jayamani.t.ext@nokia.com",
+      "managerId": "deepalaxmi-hegde-k",
+      "summaryText": "This week I worked on:\n- WS-1764183: SVT - ProtEnh-Nested-SNCP : Test and Automation Strategies & Test Cases - Review : Dev - CP\n- WS-1309406: ASON setup or connections support or Fortify issues\n- WS-1309416: Training or KT\n- WS-1326325: ASON: SQX10 Enhancement\n- WS-1406891: Auditing the tables for sna,npr and OTN\n- WS-1725865: Ason Support: EPR alarm correlation\n- WS-1763687: Miscellaneous efforts tracking\n- WS-1376902: Auditing the tables for sna,npr and OTN\n- WS-1326328: REST annotation documentation\n- WS-1326327: Code coverage\n- WS-1326326: Automation of 90% Test Cases\n- WS-1309424: REST annotation documentation\n- WS-1309423: Code coverage\n- WS-1309422: Automation of 90% Test Cases\n- WS-1309419: REST annotation documentation",
+      "submittedAt": "2026-04-01T10:33:58.101Z"
+    },
+    {
+      "weekKey": "2026-03-30",
+      "userEmail": "tejraj.choudhary@nokia.com",
+      "userName": "Tejraj Choudhary",
+      "managerId": "deepalaxmi-hegde-k",
+      "summaryText": "This week I worked on:\n- WS-1583192: GX-OLS: NPR Port Sync- wavelength param support\n- WS-1589127: GX-OLS: NPR: Optical Mtx management\n- WS-1707719: NPR: GX - UCM4 TL management (TL synch/provisioning/deletion)\n- WS-1707702: NPR - Gx UTM2 TL management, TL synch/provisioning/deletion\n- WS-1693182: GX OPS: TL Name generation for GX NE",
+      "submittedAt": "2026-04-01T10:34:34.709Z"
+    },
+    {
+      "weekKey": "2026-03-30",
+      "userEmail": "rajneesh.yadav@nokia.com",
+      "userName": "rajneesh.yadav@nokia.com",
+      "managerId": "deepalaxmi-hegde-k",
+      "summaryText": "This week I worked on:\n- WS-1704692: WSO-UI & Server Update code flow and design docs for existing component and refactoring\n- WS-1765691: Ason: Add support for Tunnel rate column in SNC screen\n- WS-1296784: Persist job details and CLOG information in database which is required for re-initializing cache\n- WS-1303622: ODL Netconf Library Upgrade in GPC Connector and WSO\n- WS-1304268: Ensure Swagger lists only valid Status Code based on the API definition.\n- WS-1305031: Singleton instance of RestTemplate to be used in WSO\n- WS-1431308: Error handling improvements\n- WS-1431556: WSO | Prediction based CO | Popup error messages don't have required user action(all applicable messages correction required)\n- WS-1484088: Clean up and Update NE version (System Preference ,Application properties  & mnc shared util changes)\n- WS-1560296: WSO_SVT_Margin_Based_CO: Upload node is showing success in upload topology Jobs-run History Even for Down NE\n- WS-1591025: JOBs ENUM fetch mechanism enhancement\n- WS-1679924: i18n support for WSO - Phase 2\n- WS-1384374: Move all hql/sql to Data Source Configuration file\n- WS-1379527: version compatibility validation\n- WSTEACAT-6478: Last up transition time not showing in the 360 view",
+      "submittedAt": "2026-04-02T17:04:54.063Z"
+    }
+  ]
+}

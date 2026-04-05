@@ -1,0 +1,35 @@
+{
+  "useJiraAsTasks": false,
+  "weeklySummaryTemplate": "Key deliverables:\n\nBlockers:\n\nNext week:\n",
+  "performanceDefaultsByRole": {
+    "employee": { "attendance": 96, "engagement": 82, "trackedHours": 6.5, "plannedHours": 8 },
+    "manager": { "attendance": 96, "engagement": 85, "trackedHours": 7, "plannedHours": 8 }
+  },
+  "quickLinks": [
+    {
+      "label": "Nokia Central",
+      "url": "https://nokia.sharepoint.com/sites/Nokia_Central"
+    },
+    {
+      "label": "NFMT GitLab",
+      "url": "https://bhgitlab.ext.net.nokia.com/NFMT"
+    },
+    {
+      "label": "Nokia Learn",
+      "url": "https://nokialearn.csod.com/client/nokialearn/default.aspx?ReturnUrl=https%3a%2f%2fnokialearn.csod.com%2fui%2flms-learner-home%2fhome%3ftab_page_id%3d-200300006%26tab_id%3d221000375"
+    },
+    {
+      "label": "Oracle FSCM",
+      "url": "https://fa-evmr-saasfaprod1.fa.ocs.oraclecloud.com/fscmUI/faces/FuseWelcome?_adf.ctrl-state=o13a25by4_114&_afrLoop=53903620890656156&_afrWindowMode=0&_afrWindowId=null&_afrFS=16&_afrMT=screen&_afrMFW=1413&_afrMFH=704&_afrMFDW=1280&_afrMFDH=800&_afrMFC=8&_afrMFCI=0&_afrMFM=0&_afrMFR=129&_afrMFG=0&_afrMFS=0&_afrMFO=0"
+    }
+  ],
+  "defaultTasks": [],
+  "quickLinksByRole": {},
+  "taskTemplatesWeekly": [],
+  "testDefaults": {
+    "pipeline": "PASS",
+    "unit": "184 / 184",
+    "integration": "2 flaky",
+    "lastRun": "Not set"
+  }
+}

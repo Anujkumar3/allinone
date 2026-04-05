@@ -245,6 +245,22 @@ function sendStaticFile(reqPath, res) {
   fs.readFile(filePath, (error, content) => {
     if (error) {
       if (error.code === "ENOENT") {
+        // For direct route hits in production, fall back to login page for non-API, extensionless paths.
+        const looksLikeAppRoute = !path.extname(requestPath) && !requestPath.startsWith("/api/");
+        if (looksLikeAppRoute) {
+          const loginPath = path.join(publicDir, "login.html");
+          fs.readFile(loginPath, (loginErr, loginContent) => {
+            if (loginErr) {
+              res.writeHead(404, { "Content-Type": "text/plain; charset=utf-8" });
+              res.end("404 Not Found");
+              return;
+            }
+            res.writeHead(200, { "Content-Type": "text/html; charset=utf-8" });
+            res.end(loginContent);
+          });
+          return;
+        }
+
         res.writeHead(404, { "Content-Type": "text/plain; charset=utf-8" });
         res.end("404 Not Found");
         return;
@@ -271,6 +287,11 @@ const server = http.createServer((req, res) => {
 
   const requestUrl = new URL(req.url, `http://${host}:${port}`);
   const pathname = requestUrl.pathname;
+
+  if (pathname === "/" || pathname === "/login" || pathname === "/login.html") {
+    sendStaticFile("/login.html", res);
+    return;
+  }
 
   if (pathname === "/api/dashboard") {
     const data = readDashboardData(dataFile);
